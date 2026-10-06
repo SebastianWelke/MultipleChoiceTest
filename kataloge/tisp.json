@@ -1,0 +1,6637 @@
+{
+  "name": "TISP",
+  "fragen": [
+    {
+      "frage": "Welche Standards bilden die Grundlage des IT-Grundschutzes?",
+      "optionen": {
+        "A": "BSI-Standard 200-1",
+        "B": "BSI-Standard 200-2",
+        "C": "ISO 9001",
+        "D": "BSI-Standard 200-3"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Was ist Ziel der Modernisierung des IT-Grundschutzes?",
+      "optionen": {
+        "A": "Schnellere Aktualisierung",
+        "B": "Reduktion auf technische Maßnahmen",
+        "C": "Skalierbarkeit für verschiedene Institutionen",
+        "D": "Ausschluss von industrieller IT"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Was beschreibt das IT-Grundschutz-Kompendium?",
+      "optionen": {
+        "A": "Zusammenstellung typischer Gefährdungen und Maßnahmen",
+        "B": "Basis für Zertifizierungen",
+        "C": "Beschreibung aller ISO-Normen",
+        "D": "Verzeichnis vertraulicher Informationen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Welche Phasen gehören zur Umsetzung nach BSI 200-2?",
+      "optionen": {
+        "A": "Strukturanalyse",
+        "B": "Modellierung",
+        "C": "IT-Grundschutz-Check",
+        "D": "Design von Netzwerktopologien"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Welche Vorgehensweisen zur Absicherung definiert BSI 200-2?",
+      "optionen": {
+        "A": "Basis-Absicherung",
+        "B": "Kern-Absicherung",
+        "C": "Standard-Absicherung",
+        "D": "Cloud-Absicherung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Was ist Ziel der Schutzbedarfsfeststellung im IT-Grundschutz?",
+      "optionen": {
+        "A": "Einstufung in normal, hoch oder sehr hoch",
+        "B": "Verschlüsselung von Systemen",
+        "C": "Definition technischer Schutzmaßnahmen",
+        "D": "Bestimmung von Schadensauswirkungen"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Was sind Bestandteile eines ISMS nach BSI Standard 200-1",
+      "optionen": {
+        "A": "Ressourcen",
+        "B": "Managementprinzipien",
+        "C": "Sicherheitsprozess",
+        "D": "Berater"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Was ist das Maximum-Prinzip im Schutzbedarf?",
+      "optionen": {
+        "A": "Übernahme des höchsten Schutzbedarfs im Verbund",
+        "B": "Verwendung maximaler Verschlüsselung",
+        "C": "Ausschluss technischer Maßnahmen",
+        "D": "Zentralisierung der Schutzklassen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Welche Aussagen zum IT-Grundschutz-Check sind korrekt?",
+      "optionen": {
+        "A": "Maßnahmen werden auf Umsetzung überprüft",
+        "B": "Ergebnisse werden dokumentiert",
+        "C": "Dient zur Ermittlung fehlender Maßnahmen",
+        "D": "Ersetzt die Risikoanalyse vollständig"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Wann ist eine Risikoanalyse nach BSI 200-3 erforderlich?",
+      "optionen": {
+        "A": "Bei sehr hohem Schutzbedarf",
+        "B": "Wenn kein passender Baustein existiert",
+        "C": "Bei typischen Standardanwendungen",
+        "D": "Auf Wunsch der Leitungsebene"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Welche Schritte umfasst die Risikoanalyse gemäß BSI 200-3?",
+      "optionen": {
+        "A": "Gefährdungsübersicht",
+        "B": "Risikoeinschätzung",
+        "C": "Risikobehandlung",
+        "D": "Auditierung durch externe Stelle"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BSI_IT_Grundschutz_10"
+    },
+    {
+      "frage": "Welche Schutzziele stehen im Zentrum der Informationssicherheit gemäß ISO 27001?",
+      "optionen": {
+        "A": "Vertraulichkeit",
+        "B": "Integrität",
+        "C": "Verfügbarkeit",
+        "D": "Zuverlässigkeit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Was beschreibt den PDCA-Zyklus in einem ISMS?",
+      "optionen": {
+        "A": "Planung, Durchführung, Kontrolle, Anpassung",
+        "B": "Problem, Diagnose, Check, Analyse",
+        "C": "Produktion, Dokumentation, Compliance, Archiv",
+        "D": "Plan, Design, Change, Audit"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Norm enthält konkrete Anforderungen an ein ISMS?",
+      "optionen": {
+        "A": "ISO 27001",
+        "B": "ISO 27002",
+        "C": "ISO 9001",
+        "D": "ISO 31000"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Aufgabe hat die Führungsebene gemäß ISO 27001?",
+      "optionen": {
+        "A": "Bereitstellung von Ressourcen",
+        "B": "Festlegung von Rollen und Verantwortlichkeiten",
+        "C": "Operativer Systembetrieb",
+        "D": "Unterstützung des ISMS"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Was ist Bestandteil der Planung im Rahmen eines ISMS?",
+      "optionen": {
+        "A": "Risikoidentifikation",
+        "B": "Abgleich mit Annex A",
+        "C": "Zieldefinition",
+        "D": "Hardwareauswahl"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Was ist das Ziel der ISO 27005?",
+      "optionen": {
+        "A": "Etablierung eines Risikomanagementprozesses",
+        "B": "Zertifizierung der IT-Sicherheitsprodukte",
+        "C": "Definition von Auditprozessen",
+        "D": "Abbildung des Business Continuity Managements"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Begriffe werden im Risikomanagement laut ISO 27001 verwendet?",
+      "optionen": {
+        "A": "Risikoniveau",
+        "B": "Restrisiko",
+        "C": "Risikotoleranz",
+        "D": "Risikoakzeptanz"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Maßnahmen beschreibt die ISO 27002?",
+      "optionen": {
+        "A": "Empfohlene Kontrollen für ein ISMS",
+        "B": "Verpflichtende Normelemente für die Zertifizierung",
+        "C": "Technische Konfigurationsanleitungen",
+        "D": "Regelungen zur Zertifikatsausstellung"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Anforderungen bestehen an die Dokumentation im ISMS?",
+      "optionen": {
+        "A": "Versionshistorie und Kontrolle",
+        "B": "Pflege und Aktualisierung",
+        "C": "Ausschließliche Speicherung in Papierform",
+        "D": "Nachweis sämtlicher Maßnahmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Was ist das Statement of Applicability (SoA)?",
+      "optionen": {
+        "A": "Erklärung zur Auswahl und Umsetzung von Maßnahmen",
+        "B": "Verzeichnis über alle Informationswerte",
+        "C": "Teil des Anhangs A",
+        "D": "Von der Leitung zu unterzeichnen"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "ISO27001_Sicherheitsmanagement_10"
+    },
+    {
+      "frage": "Welche Komponenten gehören zur PKI?",
+      "optionen": {
+        "A": "Certification Authority (CA)",
+        "B": "Registration Authority (RA)",
+        "C": "OCSP-Responder",
+        "D": "TLS-Proxy"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aufgabe hat eine Certification Authority (CA)?",
+      "optionen": {
+        "A": "Signieren von digitalen Zertifikaten",
+        "B": "Verwaltung von Root-Servern",
+        "C": "Ausstellung und Widerruf von Zertifikaten",
+        "D": "Verteilung von Software-Updates"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aufgabe hat eine Registration Authority (RA)?",
+      "optionen": {
+        "A": "Identitätsprüfung",
+        "B": "Signieren von Zertifikaten",
+        "C": "Verwaltung von Root-Zertifikaten",
+        "D": "Zertifikatssperrung"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aussage zur hierarchischen PKI-Struktur ist korrekt?",
+      "optionen": {
+        "A": "Root-CAs stehen an oberster Stelle",
+        "B": "Intermediate-CAs signieren Zertifikate für Sub-CAs",
+        "C": "Sub-CAs signieren Endnutzerzertifikate",
+        "D": "Root-CAs signieren ausschließlich Endnutzerzertifikate"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aussage zu Zertifikatsketten ist korrekt?",
+      "optionen": {
+        "A": "Sie enden bei einer Root-CA",
+        "B": "Sie dürfen keine Zwischenzertifikate enthalten",
+        "C": "Jedes Zertifikat wird von einem höheren signiert",
+        "D": "Zertifikatsketten erhöhen die Vertrauenswürdigkeit"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Zustände kann ein Zertifikat haben?",
+      "optionen": {
+        "A": "Gültig \"valid\"",
+        "B": "Widerrufen \"revoked\"",
+        "C": "Gehalten \"hold\"",
+        "D": "Unveränderlich \"immutable\""
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt OCSP?",
+      "optionen": {
+        "A": "Echtzeitprüfung des Zertifikatsstatus",
+        "B": "Bereitstellung digitaler Signaturen",
+        "C": "Unterscheidung von 'good', 'revoked', 'unknown'",
+        "D": "Speicherung von Schlüsselmaterial"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aussage zu CRLs ist korrekt?",
+      "optionen": {
+        "A": "Sie enthalten Seriennummern gesperrter Zertifikate",
+        "B": "Sie werden regelmäßig aktualisiert",
+        "C": "Sie sind von der CA signiert",
+        "D": "Sie zeigen nur gültige Zertifikate"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Bestandteile enthält ein X.509-Zertifikat typischerweise?",
+      "optionen": {
+        "A": "Öffentlicher Schlüssel",
+        "B": "Signatur der CA",
+        "C": "Gültigkeitszeitraum",
+        "D": "Privater Schlüssel"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Was sind Standard-Erweiterungen in Zertifikaten?",
+      "optionen": {
+        "A": "KeyUsage",
+        "B": "BasicConstraints",
+        "C": "SerialNumberFormat",
+        "D": "HashAlgorithm"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aufgaben hat ein Trustcenter?",
+      "optionen": {
+        "A": "Verwaltung der PKI-Infrastruktur",
+        "B": "Zentrale Ausgabestelle für Zertifikate",
+        "C": "Ausführung von Hash-Algorithmen",
+        "D": "Koordination von CA- und RA-Funktionen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Was ist ein Trust Anchor?",
+      "optionen": {
+        "A": "Selbstsigniertes Zertifikat einer Root-CA",
+        "B": "Signiertes Zertifikat einer RA",
+        "C": "Zertifikat mit unendlicher Gültigkeit",
+        "D": "Basis der Vertrauenswürdigkeit einer PKI"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aussagen zur Client-Authentifikation mit Zertifikaten sind korrekt?",
+      "optionen": {
+        "A": "Einbindung des Benutzernamens im Zertifikat möglich",
+        "B": "Verknüpfung über Mappingtabellen möglich",
+        "C": "Immer anonymisiert",
+        "D": "Unterscheidung zwischen Authentifizierung und Autorisierung ist notwendig"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die Effizienz der Zertifikatsprüfung in Webbrowsern?",
+      "optionen": {
+        "A": "OCSP-Stapling",
+        "B": "Vorinstallation von Root-Zertifikaten",
+        "C": "Nutzung des ACME-Protokolls",
+        "D": "Clientseitige Zertifikatserzeugung"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Protokolle dienen der Zertifikatsverwaltung?",
+      "optionen": {
+        "A": "SCEP",
+        "B": "CMP",
+        "C": "ACME",
+        "D": "IPSec"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Aussagen zum Lebenszyklus eines Zertifikats sind korrekt?",
+      "optionen": {
+        "A": "Zertifikate können erneuert werden",
+        "B": "Zertifikate werden bei Ablauf automatisch gesperrt",
+        "C": "Nutzer kann ein Zertifikat verlängern",
+        "D": "Zertifikate werden bei Kompromittierung widerrufen"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Was ist der Zweck von Certificate Transparency?",
+      "optionen": {
+        "A": "Erhöhung der Transparenz durch öffentliche Logs",
+        "B": "Verhinderung von Fehlverhalten durch CAs",
+        "C": "Automatisierung der Schlüsselhinterlegung",
+        "D": "Früherkennung von Zertifikatsmissbrauch"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Informationen enthält ein OCSP-Antwortpaket?",
+      "optionen": {
+        "A": "Statusinformationen zum Zertifikat",
+        "B": "Signatur der ausstellenden CA",
+        "C": "CRL-Downloadlink",
+        "D": "Zeitstempel"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Rolle spielt der Time Stamping Service (TSP)?",
+      "optionen": {
+        "A": "Fügt digitale Zeitstempel hinzu",
+        "B": "Wird bei digitalen Signaturen eingesetzt",
+        "C": "Dient der Authentifizierung in TLS",
+        "D": "Ermöglicht Nachweis zu einem bestimmten Zeitpunkt"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Standards beschreiben PKI-Elemente?",
+      "optionen": {
+        "A": "X.509",
+        "B": "PKCS#7",
+        "C": "HTML5",
+        "D": "PKIX"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "PKI_30"
+    },
+    {
+      "frage": "Welche Schutzziele verfolgt Kryptografie?",
+      "optionen": {
+        "A": "Vertraulichkeit",
+        "B": "Integrität",
+        "C": "Verfügbarkeit",
+        "D": "Authentizität"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zur Kerckhoffs’schen Maxime sind korrekt?",
+      "optionen": {
+        "A": "Nur der Schlüssel muss geheim sein",
+        "B": "Das Verfahren selbst darf bekannt sein",
+        "C": "Die Sicherheit beruht auf Geheimhaltung des Algorithmus",
+        "D": "Feind darf Verfahren kennen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Angriffsmodellen sind korrekt?",
+      "optionen": {
+        "A": "Known Plaintext erfordert Klartext und Chiffrat",
+        "B": "Chosen Plaintext erlaubt dem Angreifer eigene Klartexte zu wählen",
+        "C": "Known Ciphertext bietet stärkste Angriffsmöglichkeit",
+        "D": "Chosen Ciphertext erlaubt Zugriff auf Entschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Angriffsmethoden existieren gegen kryptografische Verfahren?",
+      "optionen": {
+        "A": "Brute Force",
+        "B": "Lineare Kryptoanalyse",
+        "C": "Salting",
+        "D": "Wörterbuchangriff"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zum One Time Pad sind korrekt?",
+      "optionen": {
+        "A": "Beweisbar sicher",
+        "B": "Schlüssel darf wiederverwendet werden",
+        "C": "Nicht praktikabel für große Datenmengen",
+        "D": "Verwendet XOR-Verknüpfung"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Blockchiffren sind korrekt?",
+      "optionen": {
+        "A": "Arbeiten mit festen Blockgrößen",
+        "B": "Nutzt Substitution und Transposition",
+        "C": "Verwendet nur symmetrische Schlüssel",
+        "D": "Erlaubt variable Blocklängen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zum Advanced Encryption Standard (AES) treffen zu?",
+      "optionen": {
+        "A": "Unterstützt 128, 192, 256 Bit Schlüssellängen",
+        "B": "Verwendet SubBytes, ShiftRows und MixColumns",
+        "C": "Gilt als unsicher seit 2020",
+        "D": "Ist effizient in Hardware und Software"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Betriebsmodi existieren für Blockchiffren?",
+      "optionen": {
+        "A": "ECB",
+        "B": "CBC",
+        "C": "CTR",
+        "D": "OBI"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was ist ein Initialisierungsvektor (IV)?",
+      "optionen": {
+        "A": "Startwert zur Vermeidung von Musterwiederholungen",
+        "B": "Geheimer Schlüssel für Blockchiffren",
+        "C": "Muss geheim bleiben",
+        "D": "Kommt in CBC und CTR zum Einsatz"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Stromchiffren sind korrekt?",
+      "optionen": {
+        "A": "Verarbeiten Daten bitweise",
+        "B": "Nutzen Schlüsselstromgeneratoren",
+        "C": "Verwenden immer denselben Schlüssel",
+        "D": "Sind für geringe Datenmengen effizient"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zur Zufallszahlengenerierung sind korrekt?",
+      "optionen": {
+        "A": "Kryptografische Verfahren benötigen echte Zufälligkeit",
+        "B": "PRNGs basieren auf deterministischen Verfahren",
+        "C": "Kryptografisch sichere PRNGs sind vorhersagbar",
+        "D": "Seeds sollten möglichst zufällig gewählt sein"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Eigenschaften erfüllen kryptografisch sichere Hashfunktionen?",
+      "optionen": {
+        "A": "Einwegfunktion",
+        "B": "Starke Kollisionsresistenz",
+        "C": "Verifikation mit privatem Schlüssel",
+        "D": "Effiziente Berechnung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu asymmetrischer Verschlüsselung sind korrekt?",
+      "optionen": {
+        "A": "Verwendet zwei verschiedene Schlüssel",
+        "B": "Ermöglicht vertrauliche Kommunikation ohne gemeinsamen Schlüssel",
+        "C": "Der öffentliche Schlüssel dient der Entschlüsselung",
+        "D": "Private Schlüssel müssen geheim gehalten werden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche mathematischen Probleme sind Grundlage asymmetrischer Verfahren?",
+      "optionen": {
+        "A": "Faktorisierung",
+        "B": "Diskreter Logarithmus",
+        "C": "Multiplikation großer Zahlen",
+        "D": "Elliptische Kurven"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zum RSA-Verfahren sind korrekt?",
+      "optionen": {
+        "A": "Basiert auf der Faktorisierung großer Zahlen",
+        "B": "Verwendet Schlüsselpaar (N, e) und d",
+        "C": "Ist effizient für symmetrische Datenmengen",
+        "D": "Benötigt große Primzahlen für Sicherheit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was beschreibt das Diffie-Hellman-Verfahren?",
+      "optionen": {
+        "A": "Austausch eines gemeinsamen Schlüssels",
+        "B": "Verwendung von ElGamal-Parametern",
+        "C": "Sicher gegen passive Angreifer",
+        "D": "Sicher gegen Man-in-the-Middle ohne weitere Maßnahmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Vorteile bietet Hybridverschlüsselung?",
+      "optionen": {
+        "A": "Schnelle Datenverschlüsselung durch symmetrische Verfahren",
+        "B": "Einfache Schlüsselaushandlung durch asymmetrische Verfahren",
+        "C": "Vollständige Sicherheit gegen Angreifer",
+        "D": "Effizient bei großen Datenmengen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was ist ein Message Authentication Code (MAC)?",
+      "optionen": {
+        "A": "Prüfsumme mit geheimer Schlüsselbasis",
+        "B": "Dient der Integritätsprüfung",
+        "C": "Wird mit privatem Schlüssel erzeugt",
+        "D": "Kann mit Blockchiffren oder Hashfunktionen erstellt werden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was sind Eigenschaften digitaler Signaturen?",
+      "optionen": {
+        "A": "Nutzung eines privaten Schlüssels zur Signatur",
+        "B": "Verifikation durch öffentlichen Schlüssel",
+        "C": "Nachweis der Herkunft und Unveränderlichkeit",
+        "D": "Verhindert die Verschlüsselung der Nachricht"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Vorteile bieten elliptische Kurven in der Kryptografie?",
+      "optionen": {
+        "A": "Kürzere Schlüssel bei vergleichbarer Sicherheit",
+        "B": "Hohe Rechenkomplexität für Angreifer",
+        "C": "Basiert auf einem ähnlichen Problem wie der diskrete Logarithmus",
+        "D": "Bietet absolute Sicherheit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu digitalen Zertifikaten treffen zu?",
+      "optionen": {
+        "A": "Binden einen öffentlichen Schlüssel an eine Identität",
+        "B": "Werden durch eine Zertifizierungsstelle ausgestellt",
+        "C": "Enthalten den privaten Schlüssel",
+        "D": "Dienen der Vertrauensbildung in PKI"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Hashfunktionen sind korrekt?",
+      "optionen": {
+        "A": "Hashwert hängt von jeder Bitänderung ab",
+        "B": "MD5 gilt als veraltet",
+        "C": "SHA-3 basiert auf Keccak",
+        "D": "Hashfunktionen sind immer reversibel"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was unterscheidet HMAC von normalen Hashfunktionen?",
+      "optionen": {
+        "A": "Benötigt geheimen Schlüssel",
+        "B": "Schützt vor Manipulation",
+        "C": "Wird mit privatem Schlüssel erzeugt",
+        "D": "Effizienter als digitale Signatur"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Probleme kann ein Angreifer über Seitenkanäle ausnutzen?",
+      "optionen": {
+        "A": "Stromverbrauch",
+        "B": "Verschlüsselungsdauer",
+        "C": "Modellierungsfehler",
+        "D": "Speicherzugriffe"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was ist das Ziel von Quantenkryptografie?",
+      "optionen": {
+        "A": "Abwehr von Quantenangriffen",
+        "B": "Verwendung von Quantenmechanik zur Schlüsselübertragung",
+        "C": "Einsatz von RSA auf Quantenbasis",
+        "D": "Entwicklung quantensicherer Algorithmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Bedrohungen stellen Quantencomputer für klassische Kryptografie dar?",
+      "optionen": {
+        "A": "Brechen von RSA durch Shor-Algorithmus",
+        "B": "Schnelleres Hashing durch Grover-Algorithmus",
+        "C": "Sicherheitsgewinn bei symmetrischen Verfahren",
+        "D": "Erfordern längere Schlüssellängen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Anforderungen hat ein sicheres Verschlüsselungsverfahren?",
+      "optionen": {
+        "A": "Nur entschlüsselbar mit passendem Schlüssel",
+        "B": "Chiffrat nicht von Zufallswert unterscheidbar",
+        "C": "Eigene Implementierung durch Nutzer",
+        "D": "Robust gegenüber bekannten Angriffen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Was sind typische Schwächen bei selbstentwickelter Kryptografie?",
+      "optionen": {
+        "A": "Fehlerhafte Implementierung",
+        "B": "Fehlende Peer-Review",
+        "C": "Veröffentlichung im Internet",
+        "D": "Unzureichende Sicherheitsanalyse"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Bestandteile umfasst ein kryptografisches Protokoll?",
+      "optionen": {
+        "A": "Definition der Kommunikationspartner",
+        "B": "Regeln für Schlüsselaustausch",
+        "C": "Implementierung im Betriebssystem",
+        "D": "Ablauf definierter Schritte zur sicheren Übertragung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Kryptografie_30"
+    },
+    {
+      "frage": "Welche Bedrohungen betreffen die Integrität in mobilen Netzen?",
+      "optionen": {
+        "A": "MITM-Angriffe",
+        "B": "Jamming",
+        "C": "Datenmanipulation",
+        "D": "IMSI-Catcher"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schutzziele sind besonders relevant in mobilen Netzen?",
+      "optionen": {
+        "A": "Verfügbarkeit",
+        "B": "Vertraulichkeit",
+        "C": "Authentizität",
+        "D": "Zugriffskontrolle"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Aussagen zu IEEE 802.11i treffen zu?",
+      "optionen": {
+        "A": "Führt WPA2 ein",
+        "B": "Nutzt AES-CCMP",
+        "C": "Unterstützt TKIP als Standard",
+        "D": "Bietet Schutz für Management Frames"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was beschreibt die Funktion von WPA3?",
+      "optionen": {
+        "A": "Verwendet OWE für offene Netzwerke",
+        "B": "Ersetzt WPA2 vollständig",
+        "C": "Bietet Schutz vor KRACK-Angriffen",
+        "D": "Verwendet ausschließlich TKIP"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was ist eine KRACK-Attacke?",
+      "optionen": {
+        "A": "Replay-Angriff auf den 4-Wege-Handshake",
+        "B": "Jamming von Mobilfunkfrequenzen",
+        "C": "Abhören von Bluetooth-Kommunikation",
+        "D": "Einsatz eines Rogue Access Points"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Risiken bestehen bei Bluetooth Classic?",
+      "optionen": {
+        "A": "Verwendung schwacher PINs",
+        "B": "Wiederverwendung fester,gerätebezogener Schlüssel (Unit Key)",
+        "C": "Einsatz von AES-256",
+        "D": "Brute-Force-Angriffe auf das Pairing"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Bluetooth-Sicherheitsmodi gibt es?",
+      "optionen": {
+        "A": "Non-Secure Mode",
+        "B": "Link-Level Security",
+        "C": "Service-Level Security",
+        "D": "Cloud-Mode"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Verbesserungen bringt Bluetooth SSP?",
+      "optionen": {
+        "A": "Diffie-Hellman Schlüsselaustausch",
+        "B": "Numeric Comparison zum Schutz vor MITM",
+        "C": "AES-256-Verschlüsselung",
+        "D": "Out-of-Band Pairing mit NFC"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Aussagen zu IMSI-Catchern treffen zu?",
+      "optionen": {
+        "A": "Fangen Teilnehmeridentitäten ab",
+        "B": "Simulieren Basisstationen",
+        "C": "Dienen der Authentifizierung im Netz",
+        "D": "Ermöglichen Klartextübertragung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was trifft auf GSM zu?",
+      "optionen": {
+        "A": "Verwendet A5/1 zur Verschlüsselung",
+        "B": "Unterstützt beidseitige Authentifikation",
+        "C": "Setzt auf TMSI zur Anonymisierung",
+        "D": "Verschlüsselt nur Luftschnittstelle"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schutzmaßnahmen gegen IMSI-Catcher sind wirksam?",
+      "optionen": {
+        "A": "Teils die Verwendung von TMSI",
+        "B": "Beidseitige Authentifikation",
+        "C": "Ausschalten des Mobiltelefons",
+        "D": "Verwendung von VPN"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was beschreibt ein Piconet in Bluetooth?",
+      "optionen": {
+        "A": "Netzwerk mit einem Master und bis zu 7 Slaves",
+        "B": "Bluetooth-Mesh-Netzwerk",
+        "C": "Verbindung zwischen mehreren WLAN-Geräten",
+        "D": "Gruppierung von IoT-Sensoren"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was ist ein Scatternet?",
+      "optionen": {
+        "A": "Netz aus mehreren Piconets",
+        "B": "Bluetooth-Netzwerk mit zentralem Master",
+        "C": "LAN über Mobilfunk",
+        "D": "Mesh-Netz für WLAN"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Funktionen erfüllt ein WIDS?",
+      "optionen": {
+        "A": "Erkennung von Rogue Access Points",
+        "B": "Störung von WLAN-Frequenzen",
+        "C": "Protokollierung von Deauth-Angriffen",
+        "D": "Automatisierte Abschaltung des Netzwerks"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was ist ein WIPS?",
+      "optionen": {
+        "A": "Wireless Intrusion Prevention System",
+        "B": "Erkennt und blockiert Angriffe",
+        "C": "Ist identisch mit WIDS",
+        "D": "Ersetzt alle Firewalls im Netz"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Verschlüsselung wird in Bluetooth ab Version 4.0 verwendet?",
+      "optionen": {
+        "A": "AES-128",
+        "B": "RC4",
+        "C": "E0",
+        "D": "RSA-2048"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schutzmaßnahmen gegen Bluetooth-Angriffe sind sinnvoll?",
+      "optionen": {
+        "A": "PIN-Management",
+        "B": "Numeric Comparison verwenden",
+        "C": "Bluetooth permanent aktiv halten",
+        "D": "Firmware-Updates regelmäßig einspielen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schwächen bestehen bei GSM?",
+      "optionen": {
+        "A": "Kein Integritätsschutz",
+        "B": "Einseitige Authentifikation",
+        "C": "Starke Schlüsselverwaltung",
+        "D": "Exportgeschwächte Algorithmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was sind Eigenschaften von LTE (4G)?",
+      "optionen": {
+        "A": "VoLTE für IP-basierte Telefonie",
+        "B": "Circuit-Switched Architektur",
+        "C": "EPS als Kernarchitektur",
+        "D": "Geringe Latenz"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Vorteile bietet 5G im Vergleich zu LTE?",
+      "optionen": {
+        "A": "Network Slicing",
+        "B": "Software Defined Networking",
+        "C": "Analoge Sprachübertragung",
+        "D": "Extrem niedrige Latenzen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Aussagen zur 5G-Sicherheitsarchitektur treffen zu?",
+      "optionen": {
+        "A": "Verwendet SUCI zur Identitätsverschleierung",
+        "B": "EAP-AKA’ für Authentifizierung",
+        "C": "Keine Schlüsselhierarchie mehr nötig",
+        "D": "Stärkere Algorithmen für Verschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was ist ein EPS-GUTI?",
+      "optionen": {
+        "A": "Temporäre Identifikation in LTE",
+        "B": "Fester Gerätecode im 5G",
+        "C": "Teilnehmerkennung im 2G",
+        "D": "Verschlüsselungsalgorithmus"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Algorithmen schützen die Integrität in LTE?",
+      "optionen": {
+        "A": "128-EIA1",
+        "B": "128-EIA2",
+        "C": "128-EEA1",
+        "D": "128-NIA1"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schwächen existieren in LTE?",
+      "optionen": {
+        "A": "IMSI teilweise ungeschützt",
+        "B": "Integritätsschutz nicht für Nutzerdaten verpflichtend",
+        "C": "Starke Verschlüsselung zwischen Netzkomponenten verpflichtend",
+        "D": "Keine End-to-End-Verschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Maßnahmen helfen gegen Rogue APs?",
+      "optionen": {
+        "A": "802.1X mit Serverauthentifizierung",
+        "B": "SSID-Broadcast deaktivieren",
+        "C": "WIDS/WIPS einsetzen",
+        "D": "WEP-Verschlüsselung nutzen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Rolle spielt der KASME in LTE?",
+      "optionen": {
+        "A": "Ableitung weiterer Schlüssel",
+        "B": "Authentifizierungsschlüssel",
+        "C": "Integrität von Daten",
+        "D": "Hauptschlüssel im SIM"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Herausforderungen betreffen 5G-Sicherheitsfunktionen?",
+      "optionen": {
+        "A": "Komplexe Schlüsselverwaltung",
+        "B": "Regulatorische Anforderungen",
+        "C": "Volle Verschlüsselung aller Netzknoten",
+        "D": "Kompatibilität mit alten Netzen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Was bedeutet 'Just Works' in Bluetooth SSP?",
+      "optionen": {
+        "A": "Kein Schutz vor MITM",
+        "B": "Nutzung starker PINs",
+        "C": "Nutzt QR-Code-Scanning",
+        "D": "Einfacher Verbindungsaufbau ohne Benutzerinteraktion"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Angriffe betreffen WLANs besonders?",
+      "optionen": {
+        "A": "Deauthentication Attack",
+        "B": "KRACK",
+        "C": "Port Scanning",
+        "D": "Rogue AP"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Bluetooth-Adressierungskonzepte existieren?",
+      "optionen": {
+        "A": "BD_ADDR",
+        "B": "MAC-Adresse",
+        "C": "IMEI",
+        "D": "IP-Adresse"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Sicherheit_mobile_Netze_30"
+    },
+    {
+      "frage": "Welche Schutzziele sind grundlegend für Anwendungssicherheit?",
+      "optionen": {
+        "A": "Vertraulichkeit",
+        "B": "Integrität",
+        "C": "Zugriffsprotokollierung",
+        "D": "Verfügbarkeit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche typischen Ursachen führen zu Schwachstellen in Anwendungen?",
+      "optionen": {
+        "A": "Menschliche Fehler",
+        "B": "Systemkomplexität",
+        "C": "Hohe Testabdeckung",
+        "D": "Fehlende Ressourcen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Ziele verfolgen Angreifer typischerweise bei Anwendungsschwachstellen?",
+      "optionen": {
+        "A": "Zugriff auf Anwendungsdaten",
+        "B": "Codeausführung auf Systemen",
+        "C": "Vermeidung von Logging",
+        "D": "Aufbau von Angriffsinfrastruktur"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Funktionen bietet TLS in Webanwendungen?",
+      "optionen": {
+        "A": "Vertraulichkeit",
+        "B": "Authentizität",
+        "C": "Integrität",
+        "D": "Sessionverwaltung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Sicherheitsmechanismen existieren im Browserumfeld?",
+      "optionen": {
+        "A": "Same Origin Policy",
+        "B": "Content Security Policy",
+        "C": "X-Frame-Options",
+        "D": "Secure Boot"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die Sicherheit beim Session Management?",
+      "optionen": {
+        "A": "Sessiondauer begrenzen",
+        "B": "Cookies mit httponly setzen",
+        "C": "Manuelles Schreiben von Session-Handling-Code",
+        "D": "Session-Management-Frameworks nutzen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Schwachstellenarten listet OWASP Top 10 typischerweise?",
+      "optionen": {
+        "A": "SQL Injection",
+        "B": "Cross Site Scripting (XSS)",
+        "C": "Denial of Service",
+        "D": "Broken Authentication"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Aspekte umfasst eine Bedrohungsmodellierung?",
+      "optionen": {
+        "A": "Ziele von Angreifern",
+        "B": "Werte und Schutzbedarfe",
+        "C": "Finanzierungsstruktur des Unternehmens",
+        "D": "Vorhandene Sicherheitseigenschaften"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Elemente gehören zum STRIDE-Modell?",
+      "optionen": {
+        "A": "Spoofing",
+        "B": "Tampering",
+        "C": "Information Disclosure",
+        "D": "Malware Injection"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Testformen unterstützen die Anwendungssicherheit?",
+      "optionen": {
+        "A": "Penetrationstests",
+        "B": "Code Reviews",
+        "C": "System-Reboots",
+        "D": "Automatisierte Tests"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Aussagen zu automatisierten Sicherheitstests sind korrekt?",
+      "optionen": {
+        "A": "Sie erkennen bekannte Fehlermuster",
+        "B": "Sie ersetzen vollständig manuelle Prüfungen",
+        "C": "Sie ermöglichen wiederholbare Prüfungen",
+        "D": "Sie benötigen keine Nachkontrolle"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Aussagen zum OWASP ASVS treffen zu?",
+      "optionen": {
+        "A": "Stellt Anforderungen für Anwendungssicherheit",
+        "B": "Ist eine Checkliste für Entwickler",
+        "C": "Dient als Maßstab für Sicherheitsbewertungen",
+        "D": "Beschreibt spezifisch Schwachstellen in Betriebssystemen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Maßnahmen gehören zum Schwachstellenmanagement?",
+      "optionen": {
+        "A": "Bewertung von Schwachstellen",
+        "B": "Priorisierung von Maßnahmen",
+        "C": "Ignorieren von CVEs mit niedrigem Score",
+        "D": "Beobachtung von Drittanbieter-Software"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Was beschreibt eine CVE-ID?",
+      "optionen": {
+        "A": "Eindeutige Kennung einer Schwachstelle",
+        "B": "Beschreibung eines Exploits",
+        "C": "Referenz für eine Sicherheitslücke",
+        "D": "Verantwortlicher Entwickler"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Was ist das Ziel des CVSS?",
+      "optionen": {
+        "A": "Bewertung der Schwere von Schwachstellen",
+        "B": "Klassifikation von Bedrohungsakteuren",
+        "C": "Berechnung eines Scores anhand von Eigenschaften",
+        "D": "Schutz von Quellcode"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Prinzipien gehören zu Secure Design?",
+      "optionen": {
+        "A": "Least Privilege",
+        "B": "Open Design",
+        "C": "Fail Securely",
+        "D": "Best Effort Access"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Phasen umfasst der Secure Software Development Lifecycle?",
+      "optionen": {
+        "A": "Requirements",
+        "B": "Secure Design",
+        "C": "Secure Coding",
+        "D": "Deployment only"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Standards dienen zur Verifikation und zum Audit?",
+      "optionen": {
+        "A": "OWASP Testing Guide",
+        "B": "PTES",
+        "C": "BSIMM",
+        "D": "OSSTMM"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Tools unterstützen die Anwendungssicherheit?",
+      "optionen": {
+        "A": "Interception Proxies",
+        "B": "Fuzzer",
+        "C": "Source-Code-Analysetools",
+        "D": "Bitlocker"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Tests zählen zur Verifikation und Auditierung?",
+      "optionen": {
+        "A": "SAST",
+        "B": "DAST",
+        "C": "IAST",
+        "D": "POST"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Anwendungssicherheit_20"
+    },
+    {
+      "frage": "Welche Merkmale treffen auf ein VPN zu?",
+      "optionen": {
+        "A": "Verwendet virtuelle, nicht-physische Verbindungen",
+        "B": "Erlaubt Zugriff auf Remote-Ressourcen",
+        "C": "Ist ausschließlich hardwarebasiert",
+        "D": "Schützt Kommunikation über unsichere Netze"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu VPN-Zielen sind korrekt?",
+      "optionen": {
+        "A": "Vertraulichkeit und Integrität der Daten",
+        "B": "Zugriffskontrolle und Skalierbarkeit",
+        "C": "Offener Zugriff ohne Authentisierung",
+        "D": "Kompatibilität mit bestehenden Systemen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zum Tunneling in VPNs treffen zu?",
+      "optionen": {
+        "A": "VPN fügt dem Datenpaket einen neuen Header hinzu",
+        "B": "Im Tunnel bestimmt der ursprüngliche Header das Routing",
+        "C": "Außerhalb des Tunnels gilt wieder der Original-Header",
+        "D": "Tunneling verschlüsselt automatisch die Nutzdaten"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche VPN-Protokolle arbeiten auf OSI-Schicht 2?",
+      "optionen": {
+        "A": "PPTP",
+        "B": "L2TP",
+        "C": "IPsec",
+        "D": "SSL"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu PPTP sind korrekt?",
+      "optionen": {
+        "A": "PPTP nutzt PPP zur Datenübertragung",
+        "B": "Kontroll- und Datenkanal sind getrennt",
+        "C": "Verschlüsselung ist integraler Bestandteil",
+        "D": "MS-CHAPv2 ermöglicht wechselseitige Authentifizierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu L2TP treffen zu?",
+      "optionen": {
+        "A": "L2TP nutzt UDP Port 1701 für den Kontrollkanal",
+        "B": "L2TP verschlüsselt den Datenverkehr eigenständig",
+        "C": "L2TP kann mit IPsec kombiniert werden",
+        "D": "L2TP ersetzt Authentisierungsmechanismen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu IPsec sind korrekt?",
+      "optionen": {
+        "A": "IPsec ist eine Protokoll-Suite",
+        "B": "IPsec arbeitet ausschließlich im Transportmodus",
+        "C": "ESP bietet Authentizität und Vertraulichkeit",
+        "D": "AH verschlüsselt Nutzdaten"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Protokolle gehören zu IPsec?",
+      "optionen": {
+        "A": "ESP",
+        "B": "IKE",
+        "C": "AH",
+        "D": "L2F"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt das IKE-Protokoll?",
+      "optionen": {
+        "A": "Aushandlung von Sicherheitsparametern",
+        "B": "Authentifizierung der Kommunikationspartner",
+        "C": "Kompression von IP-Paketen",
+        "D": "Erstellung von Security Associations (SA)"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu VPN-Betriebsmodi treffen zu?",
+      "optionen": {
+        "A": "Transportmodus schützt nur Nutzdaten",
+        "B": "Tunnelmodus schützt gesamten IP-Paketinhalt",
+        "C": "Tunnelmodus ist für Gateway-to-Gateway-Verbindungen geeignet",
+        "D": "Transportmodus verschlüsselt IP-Header"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Security Associations (SA) treffen zu?",
+      "optionen": {
+        "A": "SA definiert Parameter einer VPN-Verbindung",
+        "B": "SA ist eine Datenbank aller Netzwerkteilnehmer",
+        "C": "SA wird im Rahmen von IKE verhandelt",
+        "D": "SAD speichert aktive SAs"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu SSL-VPNs sind korrekt?",
+      "optionen": {
+        "A": "SSL-VPNs arbeiten auf OSI-Schicht 7",
+        "B": "Sie nutzen TLS zur Datenverschlüsselung",
+        "C": "SSL-VPNs erfordern stets einen installierten Client",
+        "D": "Webbasierte SSL-VPNs funktionieren mit gängigen Browsern"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche SSL-VPN-Varianten existieren?",
+      "optionen": {
+        "A": "Clientless SSL-VPN",
+        "B": "SSL-VPN mit lokalem Agenten",
+        "C": "Webbased SSL",
+        "D": "IPsec SSL Tunnel"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Split-Tunneling treffen zu?",
+      "optionen": {
+        "A": "Nicht aller Datenverkehr geht über das VPN",
+        "B": "Erhöht potenziell das Sicherheitsrisiko",
+        "C": "Ermöglicht parallele Nutzung lokaler Dienste",
+        "D": "Verhindert den Zugriff auf Internetdienste"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche VPN-Szenarien sind im Einsatz?",
+      "optionen": {
+        "A": "Host-to-Host",
+        "B": "Host-to-Gateway",
+        "C": "Gateway-to-Gateway",
+        "D": "Split-Tunnel-to-VPN"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Merkmale hat das Host-to-Gateway-Szenario?",
+      "optionen": {
+        "A": "Verbindung eines Endsystems mit einem entfernten Netzwerk",
+        "B": "Wird oft im Homeoffice eingesetzt",
+        "C": "Erfordert auf beiden Seiten VPN-Gateways",
+        "D": "Bezieht sich auf Gateway-Gateway-Verbindungen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zur End-to-End-VPN-Kopplung treffen zu?",
+      "optionen": {
+        "A": "Erfordert individuelle kryptografische Parameter je Verbindung",
+        "B": "Skaliert besonders gut bei vielen Clients",
+        "C": "Geeignet für gezielten Anwendungszugriff",
+        "D": "Komplexität steigt mit Anzahl der Verbindungen"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Informationen enthält die Security Policy Database (SPD)?",
+      "optionen": {
+        "A": "Authentifizierungsmethoden",
+        "B": "IPsec-Protokollparameter",
+        "C": "Details zur VPN-Gegenstelle",
+        "D": "Verbindungsprotokolle"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Eigenschaften hat der Authentication Header (AH)?",
+      "optionen": {
+        "A": "Stellt Authentizität sicher",
+        "B": "Stellt Integrität sicher",
+        "C": "Verschlüsselt die Nutzdaten",
+        "D": "Erkennt Replay-Angriffe"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aussagen zur Authentifizierung im VPN-Kontext treffen zu?",
+      "optionen": {
+        "A": "Kann über Zertifikate erfolgen",
+        "B": "Pre-Shared Keys sind eine Möglichkeit",
+        "C": "Erfolgt bei SSL-VPN über HTTP",
+        "D": "Ist Voraussetzung für sichere VPN-Kommunikation"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "VPN_20"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt ein Intrusion Detection System (IDS)?",
+      "optionen": {
+        "A": "Überwachung von Netzwerk- oder Systemaktivitäten",
+        "B": "Erkennung von Angriffen",
+        "C": "Präventives Blockieren von Netzwerkverkehr",
+        "D": "Alarmierung bei sicherheitsrelevanten Ereignissen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Module umfasst das CIDF-Modell?",
+      "optionen": {
+        "A": "Sensor",
+        "B": "Analyzer",
+        "C": "Proxy",
+        "D": "Response Unit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Sensoren im IDS treffen zu?",
+      "optionen": {
+        "A": "Sensoren sammeln Daten auf Protokollebene.",
+        "B": "Sensoren erkennen Angriffe direkt.",
+        "C": "Sensoren können das Verhalten einzelner Systeme analysieren.",
+        "D": "Sensoren stellen Daten für weitere Verarbeitung bereit."
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aufgaben hat das Analysemodule im IDS?",
+      "optionen": {
+        "A": "Angriffe erkennen und klassifizieren",
+        "B": "Systeme direkt abschalten",
+        "C": "Reporting und Alarmierung",
+        "D": "Verbindungsaufbau zu Clients"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt das Incident Storage Modul?",
+      "optionen": {
+        "A": "Speichern von Ereignisdaten",
+        "B": "Analyse von Angriffsmustern",
+        "C": "Sicherstellung der Datenintegrität",
+        "D": "Erstellung von Benutzerprofilen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Maßnahmen kann die Response Unit eines IDS auslösen?",
+      "optionen": {
+        "A": "Netzwerkverbindungen trennen",
+        "B": "Firewallregeln ändern",
+        "C": "IP-Adressen blockieren",
+        "D": "Benutzerdaten verschlüsseln"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche IDS-Varianten gibt es?",
+      "optionen": {
+        "A": "Hostbasiertes IDS",
+        "B": "Netzwerkbasiertes IDS",
+        "C": "Proxybasiertes IDS",
+        "D": "Hybrides IDS"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Merkmale treffen auf hostbasierte IDS zu?",
+      "optionen": {
+        "A": "Überwachung einzelner Systeme",
+        "B": "Erkennung netzwerkbasierter Angriffe",
+        "C": "Installation auf jedem Host notwendig",
+        "D": "Geringe Aussagekraft bei Anwendungsangriffen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zu netzwerkbasierten IDS sind korrekt?",
+      "optionen": {
+        "A": "Überwachen strategische Punkte im Netzwerk",
+        "B": "Beeinflussen Produktivsysteme kaum",
+        "C": "Können verschlüsselten Datenverkehr analysieren",
+        "D": "Liefern keine Aussagen zum Systemverhalten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Herausforderungen bestehen bei der Angriffserkennung durch IDS?",
+      "optionen": {
+        "A": "Hohe Datenmengen",
+        "B": "False Positives",
+        "C": "Unterschied zwischen normalem und auffälligem Verhalten",
+        "D": "Geringer Speicherbedarf"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zur signaturbasierten Erkennung sind korrekt?",
+      "optionen": {
+        "A": "Nutzt bekannte Angriffsmuster",
+        "B": "Erkennt auch unbekannte Angriffe zuverlässig",
+        "C": "Setzt gepflegte Signaturdatenbanken voraus",
+        "D": "Kann durch einfache Zeichenketten arbeiten"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zur anomaliebasierten Angriffserkennung treffen zu?",
+      "optionen": {
+        "A": "Vergleicht Ist-Zustand mit Soll-Zustand",
+        "B": "Erfordert Modellierung von Normalverhalten",
+        "C": "Reagiert nur auf bekannte Signaturen",
+        "D": "Erfordert regelmäßiges Training"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Technologien unterstützen die anomaliebasierte Erkennung?",
+      "optionen": {
+        "A": "Künstliche Intelligenz",
+        "B": "Statistische Modelle",
+        "C": "E-Mail-Gateways",
+        "D": "Firewalllogik"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Honeypots treffen zu?",
+      "optionen": {
+        "A": "Simulieren Produktivsysteme",
+        "B": "Dienen zur Ablenkung von Angreifern",
+        "C": "Erlauben die Analyse von Angreiferverhalten",
+        "D": "Sind vollständig isoliert vom Netzwerk"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche organisatorischen Maßnahmen gehören zur Intrusion Response?",
+      "optionen": {
+        "A": "Definition von Eskalationswegen",
+        "B": "Zuständigkeitsklärung",
+        "C": "Training von IDS-Sensoren",
+        "D": "Sichtung durch geschultes Personal"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Maßnahmen kann ein IDS auf lokalen Systemen einleiten?",
+      "optionen": {
+        "A": "Accounts sperren",
+        "B": "Ports schließen",
+        "C": "System in Ruhezustand versetzen",
+        "D": "Sessions beenden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Maßnahmen kann ein IDS auf der Netzwerkebene einleiten?",
+      "optionen": {
+        "A": "Änderung der Firewallregeln",
+        "B": "Abschalten von Switches",
+        "C": "IP-Adressen auf Blacklist setzen",
+        "D": "Netzwerkverbindungen terminieren"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aufgaben hat ein SIEM-System?",
+      "optionen": {
+        "A": "Kombination von SIM und SEM",
+        "B": "Zentrale Auswertung sicherheitsrelevanter Ereignisse",
+        "C": "Erstellen von Mail-Regeln",
+        "D": "Langfristige Archivierung von Vorfällen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Merkmale gelten für hybride IDS?",
+      "optionen": {
+        "A": "Kombinieren HIDS und NIDS",
+        "B": "Erhöhen die Erkennungsgenauigkeit",
+        "C": "Nutzen ausschließlich statistische Verfahren",
+        "D": "Werden auf einem einzigen System betrieben"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Schritte sind typische Folgeaktivitäten nach einem Angriff?",
+      "optionen": {
+        "A": "Identifikation des Angreifers",
+        "B": "Systemabschaltung",
+        "C": "Beweissicherung",
+        "D": "Wiederherstellung des Systemzustandes"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "IDS_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Firewalls treffen zu?",
+      "optionen": {
+        "A": "Firewalls kontrollieren den Datenfluss zwischen Netzwerksegmenten.",
+        "B": "Eine Firewall kann ausschließlich aus Hardware bestehen.",
+        "C": "Firewalls können in der Cloud betrieben werden.",
+        "D": "Firewalls ermöglichen unkontrollierten Datenverkehr."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zur Netzsegmentierung sind korrekt?",
+      "optionen": {
+        "A": "Sie erhöht die Sicherheit in sensiblen Netzbereichen.",
+        "B": "Sie reguliert die Sichtbarkeit kritischer Systeme.",
+        "C": "Sie wird ausschließlich physikalisch umgesetzt.",
+        "D": "Sie kann durch Paketfilter oder Proxies unterstützt werden."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Firewalls arbeiten auf OSI-Schicht 3-4?",
+      "optionen": {
+        "A": "Paketfilter",
+        "B": "Application Level Gateways",
+        "C": "Hybrid Firewalls",
+        "D": "Stealth Gateways"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Paketfiltern treffen zu?",
+      "optionen": {
+        "A": "Sie arbeiten oft zustandslos.",
+        "B": "Sie kontrollieren Inhalte auf Anwendungsebene.",
+        "C": "Sie bieten hohen Durchsatz.",
+        "D": "Sie analysieren den Benutzerkontext."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Vorteile bieten Proxies?",
+      "optionen": {
+        "A": "Interne Adressen werden verborgen.",
+        "B": "Zugänge können autorisiert werden.",
+        "C": "Sie ersetzen Paketfilter vollständig.",
+        "D": "Sie ermöglichen zentrale Authentisierung."
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Application Level Gateways treffen zu?",
+      "optionen": {
+        "A": "Sie filtern Daten auf OSI-Schicht 5-7.",
+        "B": "Sie sind schneller als Paketfilter.",
+        "C": "Sie ermöglichen Virenprüfung im Datenstrom.",
+        "D": "Sie benötigen häufige Anpassungen."
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussage beschreibt ein Stealth Gateway korrekt?",
+      "optionen": {
+        "A": "Es ist auf OSI-Schicht 1 aktiv.",
+        "B": "Es ist von außen sichtbar.",
+        "C": "Es übernimmt MAC-Adressen des geschützten Systems.",
+        "D": "Es filtert auf OSI-Schicht 2."
+      },
+      "richtig": [
+        "C",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Funktionen sind typischerweise in Next Generation Firewalls enthalten?",
+      "optionen": {
+        "A": "Spamfilter",
+        "B": "Intrusion Detection",
+        "C": "ARP-Spoofing",
+        "D": "VPN"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zur PAP-Architektur treffen zu?",
+      "optionen": {
+        "A": "Sie besteht aus Paketfilter, ALG, Paketfilter.",
+        "B": "Das ALG wird durch Paketfilter entlastet.",
+        "C": "Das ALG schützt die interne Struktur.",
+        "D": "Sie ist nicht mit DMZs kombinierbar."
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zur Auswahl von Firewalls gemäß BSI-Schutzbedarf treffen zu?",
+      "optionen": {
+        "A": "Bei hohem Schutzbedarf wird PAP empfohlen.",
+        "B": "Bei normalem Schutzbedarf reicht ein Paketfilter.",
+        "C": "Bei sehr hohem Schutzbedarf wird ein mehrstufiger PAP-Aufbau empfohlen.",
+        "D": "Die Schutzbedarfsermittlung ist optional."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Vorteile bieten Application Level Gateways?",
+      "optionen": {
+        "A": "Inhaltsbasierte Filterung ist möglich.",
+        "B": "Durchsatz ist besonders hoch.",
+        "C": "Authentifizierung von Benutzern ist möglich.",
+        "D": "Anpassung an neue Protokolle ist nicht notwendig."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Unified Threat Management (UTM) treffen zu?",
+      "optionen": {
+        "A": "UTM kombiniert mehrere Sicherheitsfunktionen in einem Gerät.",
+        "B": "UTM ersetzt vollständig die Netzsegmentierung.",
+        "C": "UTM kann auch VPN-Funktionalität beinhalten.",
+        "D": "UTM ist ausschließlich softwarebasiert."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zum Deny-All-Prinzip sind korrekt?",
+      "optionen": {
+        "A": "Alle Zugriffe sind zunächst erlaubt.",
+        "B": "Nur explizit erlaubte Verbindungen sind gestattet.",
+        "C": "Dieses Prinzip erhöht die Sicherheit.",
+        "D": "Es wird in der Praxis kaum verwendet."
+      },
+      "richtig": [
+        "B",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zum zentralen Firewall-Management sind korrekt?",
+      "optionen": {
+        "A": "Administrative Tätigkeiten sollten protokolliert werden.",
+        "B": "Regelpflege erfolgt idealerweise über übersichtliche Tools.",
+        "C": "Management erfolgt immer aus demselben Segment wie der Datenverkehr.",
+        "D": "Aufgaben sollten klar getrennt sein."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Herausforderungen bestehen beim Einsatz von Firewalls?",
+      "optionen": {
+        "A": "Tunneling kann Firewallregeln umgehen.",
+        "B": "Verschlüsselung erschwert die Paketinspektion.",
+        "C": "Multimedia-Protokolle nutzen feste Ports.",
+        "D": "Pflege der Firewallregeln kann komplex sein."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zur Sichtbarkeit von Firewalls treffen zu?",
+      "optionen": {
+        "A": "Stealth-Firewalls sind im Netzwerk sichtbar.",
+        "B": "Paketfilter sind stets transparent.",
+        "C": "Stealth-Firewalls übernehmen die MAC-Adresse geschützter Systeme.",
+        "D": "Firewalls sollten für Angreifer möglichst unsichtbar sein."
+      },
+      "richtig": [
+        "C",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Kriterien beeinflussen die Auswahl einer Firewall?",
+      "optionen": {
+        "A": "Schutzbedarf der zu sichernden Systeme.",
+        "B": "Durchsatzanforderungen.",
+        "C": "Vorhandene Netzstruktur.",
+        "D": "Zertifikate des Administrators."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zu dynamischen Paketfiltern treffen zu?",
+      "optionen": {
+        "A": "Sie basieren auf Verbindungstabellen.",
+        "B": "Sie arbeiten komplett zustandslos.",
+        "C": "Sie erkennen, ob ein Paket Antwort auf eine bestehende Verbindung ist.",
+        "D": "Sie analysieren ausschließlich den Dateninhalt."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zum Einsatz von ALG in Firewalls sind korrekt?",
+      "optionen": {
+        "A": "ALG kann HTTP-Traffic gezielt blockieren.",
+        "B": "ALG kann zur Benutzeridentifikation beitragen.",
+        "C": "ALG ersetzt vollständig alle anderen Firewalltypen.",
+        "D": "ALG arbeitet auf den Schichten 5 bis 7 des OSI-Modells."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zu Open-Source-Firewalls treffen zu?",
+      "optionen": {
+        "A": "iptables ist ein Beispiel für einen Paketfilter.",
+        "B": "IPFire nutzt dynamische Paketfilterung.",
+        "C": "pfSense ist eine Next Generation Firewall.",
+        "D": "Open-Source-Lösungen sind prinzipiell unsicher."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Firewalls_20"
+    },
+    {
+      "frage": "Welche Aussagen zum OSI-Modell treffen zu?",
+      "optionen": {
+        "A": "Es unterteilt die Netzwerkkommunikation in sieben Schichten.",
+        "B": "Die Vermittlungsschicht ist für IP-Adressierung zuständig.",
+        "C": "Die Anwendungsschicht befindet sich auf Layer 1.",
+        "D": "Die Sicherungsschicht wird auch als Data Link Layer bezeichnet."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur Transportebene im TCP/IP-Modell sind korrekt?",
+      "optionen": {
+        "A": "Sie sorgt für die zuverlässige Übertragung von Daten.",
+        "B": "Sie arbeitet ausschließlich verbindungslos.",
+        "C": "Sie nutzt Portnummern zur Identifikation von Anwendungen.",
+        "D": "Sie übernimmt die physikalische Datenübertragung."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Protokolle arbeiten auf der Anwendungsschicht des TCP/IP-Modells?",
+      "optionen": {
+        "A": "HTTP",
+        "B": "TCP",
+        "C": "SSH",
+        "D": "ICMP"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zu UDP treffen zu?",
+      "optionen": {
+        "A": "UDP ist verbindungslos.",
+        "B": "UDP garantiert die Reihenfolge der Datenübertragung.",
+        "C": "UDP verwendet keine Fehlerkorrektur.",
+        "D": "UDP nutzt die Portnummern 1 bis 65535."
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche der folgenden Aussagen zum IP-Protokoll treffen zu?",
+      "optionen": {
+        "A": "Es ist zustandslos.",
+        "B": "Es operiert auf Layer 3 des OSI-Modells.",
+        "C": "Es garantiert eine fehlerfreie Datenübertragung.",
+        "D": "Es ermöglicht die Paketweiterleitung über Router."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur Adressierung im OSI-Modell sind korrekt?",
+      "optionen": {
+        "A": "MAC-Adressen werden auf Layer 2 verwendet.",
+        "B": "IP-Adressen befinden sich auf Layer 3.",
+        "C": "TCP-Ports befinden sich auf Layer 4.",
+        "D": "Domainnamen sind Bestandteil von Layer 1."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur Datenübertragung im TCP/IP-Modell treffen zu?",
+      "optionen": {
+        "A": "Auf Layer 1 werden Bits übertragen.",
+        "B": "Die Anwendungsschicht verarbeitet Segmente.",
+        "C": "Jeder Layer fügt eigene Header hinzu.",
+        "D": "Beim Empfang werden die Header entfernt."
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zum IPv4-Header sind korrekt?",
+      "optionen": {
+        "A": "Das TTL-Feld wird bei jedem Router um eins reduziert.",
+        "B": "Die Header Checksum dient zur Fehlererkennung.",
+        "C": "Die Headerlänge ist fix auf 20 Byte festgelegt.",
+        "D": "Das Fragment Offset-Feld enthält Informationen zur Fragmentierung."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur CIDR-Notation treffen zu?",
+      "optionen": {
+        "A": "/24 entspricht der Subnetzmaske 255.255.255.0",
+        "B": "192.168.1.0/24 bietet 256 Hostadressen",
+        "C": "Der Hostanteil bei /24 beträgt 8 Bit",
+        "D": "CIDR ermöglicht eine flexible Netzgröße"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur IPv6-Adressierung sind korrekt?",
+      "optionen": {
+        "A": "IPv6-Adressen bestehen aus 128 Bit.",
+        "B": "NAT ist in IPv6 obligatorisch.",
+        "C": "SLAAC ist eine Methode zur automatischen Adressvergabe.",
+        "D": "IPv6 ersetzt ICMP durch ARP."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Statuswerte kann eine IPv6-Adresse annehmen?",
+      "optionen": {
+        "A": "Tentative",
+        "B": "Preferred",
+        "C": "Rejected",
+        "D": "Deprecated"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zum IPv6-Header sind richtig?",
+      "optionen": {
+        "A": "Der Header enthält kein TTL-Feld.",
+        "B": "Der Header enthält keine Prüfsumme.",
+        "C": "Der Header ist fix 40 Byte groß.",
+        "D": "Der Header enthält Fragmentierungsfelder."
+      },
+      "richtig": [
+        "B",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zu ICMPv6 sind korrekt?",
+      "optionen": {
+        "A": "Es übernimmt Fehlerdiagnosefunktionen.",
+        "B": "ICMPv6 ist nur in privaten Netzwerken erlaubt.",
+        "C": "Die Felder enthalten Type, Code und Prüfsumme.",
+        "D": "Informational Messages nutzen Werte zwischen 0 und 127."
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Risiken bestehen bei unverschlüsselten Netzwerkprotokollen?",
+      "optionen": {
+        "A": "Replay-Angriffe",
+        "B": "Mitlesen von Daten",
+        "C": "DoS-Angriffe auf Applikationsebene",
+        "D": "IP-Adresskonflikte"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Gegenmaßnahmen schützen vor Replay-Angriffen?",
+      "optionen": {
+        "A": "Zeitstempel",
+        "B": "Nonce-Werte",
+        "C": "Digitale Signaturen",
+        "D": "MAC-Adressenfilter"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zu VLANs sind korrekt?",
+      "optionen": {
+        "A": "VLANs ermöglichen logische Netzsegmentierung.",
+        "B": "VLANs sind physikalisch unabhängig.",
+        "C": "VLANs verbessern die Bandbreite.",
+        "D": "VLANs bieten Schutz gegen MAC-Flooding."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zu Software-defined Networking (SDN) sind richtig?",
+      "optionen": {
+        "A": "SDN trennt Control-Plane und Data-Plane.",
+        "B": "SDN setzt auf zentrale Steuerung.",
+        "C": "SDN ersetzt IPv6.",
+        "D": "SDN basiert auf virtuellen Diensten."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Protokolle gelten als unsicher?",
+      "optionen": {
+        "A": "HTTP",
+        "B": "Telnet",
+        "C": "FTP",
+        "D": "SSH"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aussagen zur Absicherung von Netzwerken sind korrekt?",
+      "optionen": {
+        "A": "IDS können verdächtigen Netzwerkverkehr erkennen.",
+        "B": "Netzwerksegmentierung reduziert Angriffsflächen.",
+        "C": "MAC-Adressen bieten sicheren Netzschutz.",
+        "D": "VPNs erhöhen die Vertraulichkeit der Kommunikation."
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die Sicherheit beim Netzzugang?",
+      "optionen": {
+        "A": "Einsatz von Client-Zertifikaten",
+        "B": "MAC-Filterung",
+        "C": "Radius-Authentifizierung",
+        "D": "Offene WLAN-Zugänge"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt die Transport Layer im TCP/IP-Modell?",
+      "optionen": {
+        "A": "Segmentierung der Daten",
+        "B": "Vergabe von MAC-Adressen",
+        "C": "Fehlerbehandlung",
+        "D": "Zuordnung über Portnummern"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Netzwerksicherheit_komplett"
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen Ring 0 und Ring 3 in Windows?",
+      "optionen": {
+        "A": "Ring 0 ist der Kernel-Mode, Ring 3 ist der User-Mode",
+        "B": "Ring 0 hat höhere Privilegien",
+        "C": "Ring 3 wird ausschließlich für Hardware verwendet",
+        "D": "Ring 3 ist sicherer als Ring 0"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Sicherheitsfunktionen bietet Windows NTFS?",
+      "optionen": {
+        "A": "Zugriffskontrolle mittels DACLs",
+        "B": "Verschlüsselung per EFS",
+        "C": "Komprimierung",
+        "D": "Verhinderung von Registry-Zugriffen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Aussage zu DACLs und SACLs ist korrekt?",
+      "optionen": {
+        "A": "DACLs regeln Zugriffsrechte",
+        "B": "SACLs definieren Überwachung",
+        "C": "DACLs enthalten SID-Einträge",
+        "D": "SACLs ersetzen DACLs"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Vorteile bietet eine Windows-Domäne gegenüber Arbeitsgruppen?",
+      "optionen": {
+        "A": "Zentrale Verwaltung von Benutzern",
+        "B": "Kerberos-Authentifizierung",
+        "C": "Mehr Sicherheit durch NTLM",
+        "D": "Globale Gruppenrichtlinien"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Schwächen hat NTLM?",
+      "optionen": {
+        "A": "Verwendet veraltete Hash-Methoden",
+        "B": "Anfällig für Pass-the-Hash",
+        "C": "Unterstützt MFA",
+        "D": "Ersetzt Kerberos"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was sind Merkmale der Kerberos-Authentifizierung?",
+      "optionen": {
+        "A": "Verwendet Tickets",
+        "B": "Unterstützt Smart Cards",
+        "C": "Tickets haben begrenzte Gültigkeit",
+        "D": "Erlaubt Authentifizierung ohne Passwort"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was beschreibt das Prinzip „Rights vs. Permissions“?",
+      "optionen": {
+        "A": "Rights gelten für Benutzergruppen",
+        "B": "Permissions gelten für Datenobjekte",
+        "C": "Permissions werden über GPOs gesetzt",
+        "D": "Rights steuern administrative Aufgaben"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Gruppentypen existieren in Active Directory?",
+      "optionen": {
+        "A": "Global",
+        "B": "Lokal",
+        "C": "Domänen-fern",
+        "D": "Universal"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Sicherheitsmaßnahmen bietet Bitlocker?",
+      "optionen": {
+        "A": "Schutz der Bootpartition",
+        "B": "AES-Verschlüsselung",
+        "C": "Recovery-Key in AD speicherbar",
+        "D": "Netzwerkverschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Schutzfunktion bietet die UAC?",
+      "optionen": {
+        "A": "Trennung normaler und Adminrechte",
+        "B": "Verhindert Zugriff auf Systemordner",
+        "C": "Bietet zentrale Rechteverwaltung",
+        "D": "Schützt vor Registryzugriffen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Aussagen zur Gruppenrichtlinienverwaltung (GPO) sind korrekt?",
+      "optionen": {
+        "A": "Wird zentral über den Domaincontroller gesteuert",
+        "B": "Ermöglicht Automatisierung sicherheitsrelevanter Einstellungen",
+        "C": "Nur für lokale Benutzer verfügbar",
+        "D": "Können für Benutzer und Computer gelten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Elemente kann man mit NTFS-Berechtigungen schützen?",
+      "optionen": {
+        "A": "Dateien",
+        "B": "Ordner",
+        "C": "Drucker",
+        "D": "Registry-Einträge"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was gehört zur Eventlog-Überwachung in Windows?",
+      "optionen": {
+        "A": "Sicherheitsprotokoll",
+        "B": "Systemprotokoll",
+        "C": "DNS-Protokoll",
+        "D": "Router-Log"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was bewirkt das Prinzip Least Privilege?",
+      "optionen": {
+        "A": "Nutzer erhalten nur minimal notwendige Rechte",
+        "B": "Verhindert unnötigen Zugriff",
+        "C": "Alle Adminrechte werden deaktiviert",
+        "D": "Reduziert Angriffsfläche"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Vorteile bietet Kerberos gegenüber NTLM?",
+      "optionen": {
+        "A": "Keine Übertragung des Passworts",
+        "B": "Nutzung von Tickets",
+        "C": "Sicher gegenüber Pass-the-Hash",
+        "D": "Basiert auf asymmetrischer Verschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was beschreibt Address Space Layout Randomization (ASLR)?",
+      "optionen": {
+        "A": "Zufällige Anordnung von Speicheradressen",
+        "B": "Erhöht Sicherheit gegen Buffer Overflows",
+        "C": "Verringert Logdateigröße",
+        "D": "Stellt Domänencontroller sicher"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Maßnahmen sind Teil des Windows-Hardening?",
+      "optionen": {
+        "A": "Deaktivierung unnötiger Dienste",
+        "B": "Nutzung des Microsoft Security Baseline Analyzer",
+        "C": "Aktivierung von AppLocker",
+        "D": "Installation aller verfügbaren Rollen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was beschreibt ein Active Directory Forest?",
+      "optionen": {
+        "A": "Größte Organisationseinheit in AD",
+        "B": "Besteht aus mehreren Domain Trees",
+        "C": "Wird nur bei Windows Home verwendet",
+        "D": "Erfordert mehrere lokale Benutzerkonten"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Kategorien kennt eine Audit-Policy?",
+      "optionen": {
+        "A": "Logon/Logoff",
+        "B": "Object Access",
+        "C": "Policy Change",
+        "D": "Application Performance"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Was wird mit AppLocker erreicht?",
+      "optionen": {
+        "A": "Whitelisting von Anwendungen",
+        "B": "Verhinderung unerlaubter Softwareausführung",
+        "C": "Nutzung mobiler Tokens",
+        "D": "Erweiterung der Passwortkomplexität"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Windows_Betriebssystemsicherheit_20"
+    },
+    {
+      "frage": "Welche Cloud-Betriebsmodelle existieren laut Schulungsunterlage?",
+      "optionen": {
+        "A": "Private Cloud",
+        "B": "Public Cloud",
+        "C": "Hybrid Cloud",
+        "D": "Global Cloud"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Vorteile bietet die Private Cloud?",
+      "optionen": {
+        "A": "Hohe Individualisierbarkeit",
+        "B": "Geringer Aufwand beim Unternehmen",
+        "C": "Eignung für vertrauliche Daten",
+        "D": "Günstigere Nutzungskosten als Public Cloud"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was ist das Shared Responsibility Model?",
+      "optionen": {
+        "A": "Sicherheitsverantwortung liegt vollständig beim Cloud-Anbieter",
+        "B": "Aufteilung von Sicherheitsverantwortung zwischen Anbieter und Kunde",
+        "C": "Modell zur Preisverteilung bei SaaS-Angeboten",
+        "D": "Gilt nur für Public Cloud"
+      },
+      "richtig": [
+        "B"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Risiken bestehen bei Cloud-Nutzung?",
+      "optionen": {
+        "A": "Vendor Lock-In",
+        "B": "Unzureichende Exit-Strategie",
+        "C": "Unzureichende Schulung",
+        "D": "Geringe Skalierbarkeit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Cloud-Service-Modelle gibt es?",
+      "optionen": {
+        "A": "IaaS",
+        "B": "PaaS",
+        "C": "SaaS",
+        "D": "RaaS"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was trifft auf 'Bring Your Own Key' (BYOK) zu?",
+      "optionen": {
+        "A": "Kunde verwaltet eigenen Schlüssel",
+        "B": "Gilt immer für besonders vertrauliche Daten",
+        "C": "Ermöglicht verschlüsselte Datenbanken",
+        "D": "Double Key Encryption darf nicht enthalten sein"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was ist ein Vorteil der Hybrid Cloud?",
+      "optionen": {
+        "A": "Flexibilität der Public Cloud",
+        "B": "Sicherheitsvorteile der Private Cloud",
+        "C": "Höhere Lizenzkosten",
+        "D": "Kein Verwaltungsaufwand für den Kunden"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Aussage zu Cloud-Verschlüsselung ist korrekt?",
+      "optionen": {
+        "A": "Datenbankverschlüsselung liegt beim Kunden",
+        "B": "Managementdaten-Verschlüsselung liegt beim Anbieter",
+        "C": "Ende-zu-Ende-Verschlüsselung ist Standard",
+        "D": "BYOK ist nicht DSGVO-konform"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was ist ein Vorteil von Zertifizierungen des Anbieters?",
+      "optionen": {
+        "A": "Reduziert eigenen Prüfaufwand",
+        "B": "Ermöglicht Compliance-Nachweis",
+        "C": "Ersetzt eigene Sicherheitsvorgaben",
+        "D": "Ist gesetzlich verpflichtend"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was ist eine typische Herausforderung bei Cloud-Migration?",
+      "optionen": {
+        "A": "Fehlende Exit-Strategie",
+        "B": "Fehlende On-Premise Infrastruktur",
+        "C": "Nicht klassifizierte Daten",
+        "D": "Verlust der Lizenzrechte"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Cloud-Verschlüsselungsmodelle bietet Microsoft?",
+      "optionen": {
+        "A": "Platform Managed Key",
+        "B": "Customer Managed Key",
+        "C": "Hold Your Own Key",
+        "D": "Third-Party Key Management"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was bedeutet 'Cloud-First'-Strategie?",
+      "optionen": {
+        "A": "IT-Dienste sollen primär als Cloudlösung beschafft werden",
+        "B": "Ausschließliche Nutzung von SaaS",
+        "C": "Cloud-Einsatz wird pro Fall geprüft",
+        "D": "Klassische IT wird zuerst aufgebaut"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Rolle spielen Sensitivity Labels in der Cloud?",
+      "optionen": {
+        "A": "Ermöglichen Datenklassifizierung",
+        "B": "Sind Bestandteil von Microsoft Information Protection",
+        "C": "Sind nur für On-Prem-Systeme gedacht",
+        "D": "Ersetzen Zugriffsrechte"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Stakeholder sind typischerweise in der Cloud-Strategie beteiligt?",
+      "optionen": {
+        "A": "Risikomanagement",
+        "B": "IT und Einkauf",
+        "C": "Datenschutz und Personalabteilung",
+        "D": "Buchhaltung und Öffentlichkeitsarbeit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Was ist ein typischer Bestandteil einer Cloud-Strategie?",
+      "optionen": {
+        "A": "Migrationsstrategie",
+        "B": "Workload-Analyse",
+        "C": "Hotfix-Plan",
+        "D": "Roadmap zur Umsetzung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Cloud_Security_15"
+    },
+    {
+      "frage": "Welche Datei enthält die Benutzerinformationen unter Linux?",
+      "optionen": {
+        "A": "/etc/passwd",
+        "B": "/etc/shadow",
+        "C": "/etc/users",
+        "D": "/var/log/auth.log"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was beschreibt das Set-UID-Bit (SUID)?",
+      "optionen": {
+        "A": "Ausführung eines Programms mit den Rechten des Eigentümers",
+        "B": "Sperrt Schreibzugriffe auf Dateien",
+        "C": "Deaktiviert die Benutzer-ID",
+        "D": "Verhindert Root-Rechte"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Aussage zu Access Control Lists (ACLs) unter Linux ist korrekt?",
+      "optionen": {
+        "A": "Ermöglichen feingranulare Rechtevergabe",
+        "B": "Sind unter ext4 verfügbar",
+        "C": "Werden mit chmod gesetzt",
+        "D": "Werden über setfacl gepflegt"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Bedeutung hat die UID 0 unter Linux?",
+      "optionen": {
+        "A": "Sie gehört dem root-User",
+        "B": "Sie gehört dem ersten normalen Benutzer",
+        "C": "UID 0 steht für Systemdienste",
+        "D": "UID 0 ist gesperrt"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Tools eignen sich zur Linux-Systemüberwachung?",
+      "optionen": {
+        "A": "syslog/rsyslog",
+        "B": "Tripwire",
+        "C": "Nmap",
+        "D": "tcpdump"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Aussage beschreibt chroot korrekt?",
+      "optionen": {
+        "A": "Erstellt eine isolierte Umgebung",
+        "B": "Ist ein vollständiger Hypervisor",
+        "C": "Verhindert Zugriff auf andere Systembereiche",
+        "D": "Ist nur für Kernelentwickler gedacht"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was ist die Funktion von sudo?",
+      "optionen": {
+        "A": "Ausführen von Befehlen mit Root-Rechten",
+        "B": "Verhindert Benutzerwechsel",
+        "C": "Beendet Prozesse",
+        "D": "Wechselt den Kernel"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Berechtigung steht für 'ausführbar' in der Linux-Rechteverwaltung?",
+      "optionen": {
+        "A": "x",
+        "B": "e",
+        "C": "r",
+        "D": "w"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Maßnahmen gelten als Linux-Hardening?",
+      "optionen": {
+        "A": "Deaktivieren nicht benötigter Dienste",
+        "B": "Einsatz von SELinux/AppArmor",
+        "C": "Regelmäßige Log-Analyse",
+        "D": "Aktivieren aller Kernelmodule"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was regelt die Datei /etc/hosts.allow?",
+      "optionen": {
+        "A": "Zugriffssteuerung mit TCP-Wrapper",
+        "B": "DNS-Einstellungen",
+        "C": "Gruppenrechte",
+        "D": "Speicherorte für Backups"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Netzwerkdienste arbeiten über SSH?",
+      "optionen": {
+        "A": "SCP",
+        "B": "SFTP",
+        "C": "Telnet",
+        "D": "RSH"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was sind empfohlene Konfigurationen für SSH?",
+      "optionen": {
+        "A": "PermitRootLogin no",
+        "B": "Protocol 2",
+        "C": "PasswordAuthentication yes",
+        "D": "PubkeyAuthentication yes"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Dateisysteme ermöglichen ACLs unter Linux?",
+      "optionen": {
+        "A": "ext3",
+        "B": "ext4",
+        "C": "xfs",
+        "D": "fat32"
+      },
+      "richtig": [
+        "B",
+        "C"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was bewirkt das Sticky-Bit?",
+      "optionen": {
+        "A": "Nur Eigentümer dürfen Dateien löschen",
+        "B": "Alle Benutzer haben Schreibzugriff",
+        "C": "Verhindert Ausführung durch root",
+        "D": "Hebt Dateiberechtigungen auf"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Welche Tools dienen der Angriffserkennung auf Linux-Systemen?",
+      "optionen": {
+        "A": "Tripwire",
+        "B": "AIDE",
+        "C": "OSSEC",
+        "D": "Nessi"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Linux_Betriebssystemsicherheit_15"
+    },
+    {
+      "frage": "Was ist das Hauptziel von Content Security?",
+      "optionen": {
+        "A": "Schutz vor Malware und unerwünschten Inhalten",
+        "B": "Einhaltung von Datenschutzgesetzen",
+        "C": "Verhinderung physischer Einbrüche",
+        "D": "Vermeidung von BYOD-Richtlinien"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Malwaretypen zählen zu den klassischen Kategorien?",
+      "optionen": {
+        "A": "Viren",
+        "B": "Würmer",
+        "C": "Trojaner",
+        "D": "Cryptominer"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Eigenschaften hat ein Computervirus?",
+      "optionen": {
+        "A": "Benötigt menschliche Aktion zur Aktivierung",
+        "B": "Repliziert sich selbst",
+        "C": "Kopiert sich in den Bootsektor",
+        "D": "Funktioniert ausschließlich auf mobilen Geräten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Merkmale weisen Würmer auf?",
+      "optionen": {
+        "A": "Autonome Verbreitung ohne Benutzeraktion",
+        "B": "Verbreitung über Netzwerk oder USB-Sticks",
+        "C": "Verbreitung über E-Mail-Spam",
+        "D": "Nutzung eines C2-Servers"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Funktionen haben typische Trojaner?",
+      "optionen": {
+        "A": "Fernzugriff ermöglichen",
+        "B": "Verschlüsselung von Dateien",
+        "C": "Verstecken von Prozessen (Rootkits)",
+        "D": "Replikation ohne Wirtsprogramm"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche sind typische Einfallswege für Malware?",
+      "optionen": {
+        "A": "E-Mails",
+        "B": "Wechseldatenträger",
+        "C": "Webseiten mit aktiven Inhalten",
+        "D": "IPSec-VPNs"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Was zeichnet Phishing aus?",
+      "optionen": {
+        "A": "Erzeugt Druck beim Nutzer zu handeln",
+        "B": "Ist eine Form von Spam",
+        "C": "Verwendet HTML5 zur Infektion",
+        "D": "Sendet große Dateianhänge"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Technologien können als Einfallstor für aktive Inhalte dienen?",
+      "optionen": {
+        "A": "JavaScript",
+        "B": "Java",
+        "C": "ActiveX",
+        "D": "DNS"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Maßnahmen helfen gegen aktive Inhalte?",
+      "optionen": {
+        "A": "Deaktivierung aktiver Inhalte",
+        "B": "Awareness-Maßnahmen",
+        "C": "Regelmäßige Softwareaktualisierung",
+        "D": "VPN-Tunnel"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Prinzipien werden bei Content-Scanning angewendet?",
+      "optionen": {
+        "A": "On-Access-Scanning",
+        "B": "On-Demand-Scanning",
+        "C": "Quarantäne-Scanning",
+        "D": "On-Write-Scanning"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Was ist ein Nachteil der Signatur-basierten Erkennung?",
+      "optionen": {
+        "A": "Erkennung nur bekannter Malware",
+        "B": "Abhängigkeit von Signaturdatenbank",
+        "C": "Hohe False Positive Rate",
+        "D": "Geringe Systembelastung"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Methoden dienen der proaktiven Malware-Erkennung?",
+      "optionen": {
+        "A": "Heuristik",
+        "B": "Verhaltensanalyse",
+        "C": "Sandboxing",
+        "D": "Digitale Signaturen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Was ist eine Realtime Blackhole List (RBL)?",
+      "optionen": {
+        "A": "Liste bekannter Spam-Versender",
+        "B": "Wird zur Blockierung von IPs verwendet",
+        "C": "Reduziert False Positives signifikant",
+        "D": "Wird vor Aufbau einer Mailverbindung abgefragt"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Wie funktioniert Greylisting im Spam-Schutz?",
+      "optionen": {
+        "A": "Erste Zustellversuche werden abgelehnt",
+        "B": "Spam-Versender geben auf",
+        "C": "E-Mails werden sofort angenommen",
+        "D": "Ist eine Filtertechnik für Webseiten"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Filtertechniken werden bei E-Mail-Spam eingesetzt?",
+      "optionen": {
+        "A": "Headeranalyse",
+        "B": "Bayes-Filter",
+        "C": "Bodyanalyse",
+        "D": "Verbindung mit Active Directory"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Aktionen können nach Spamklassifikation erfolgen?",
+      "optionen": {
+        "A": "Sperren",
+        "B": "Quarantäne",
+        "C": "Weiterleitung",
+        "D": "Komprimierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Herausforderung besteht bei verschlüsselten Inhalten?",
+      "optionen": {
+        "A": "Inhalte können nicht zentral analysiert werden",
+        "B": "Verhindert dezentrale Filterung",
+        "C": "Ende-zu-Ende-Verschlüsselung verhindert Scanning",
+        "D": "Erfordert zentralisierte Key-Verwaltung"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Was ist eine geeignete Maßnahme gegen Malware in Webinhalten?",
+      "optionen": {
+        "A": "Einsatz eines Proxyservers",
+        "B": "URL-Reputationsfilter",
+        "C": "Dekompilierung von Skripten",
+        "D": "Deaktivierung von MIME"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche mobilen Schutzmaßnahmen werden empfohlen?",
+      "optionen": {
+        "A": "MDM-Lösungen",
+        "B": "Apps nur aus vertrauenswürdigen Quellen",
+        "C": "Dynamische und statische Analyse",
+        "D": "Installieren von Flash-Playern"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Welche Aussage zu BYOD und Content Security ist korrekt?",
+      "optionen": {
+        "A": "Erhöhtes Risiko durch private Geräte",
+        "B": "Erfordert zusätzliche Sicherheitsmaßnahmen",
+        "C": "BYOD schützt vor Würmern",
+        "D": "MDM kann Sicherheitslücken reduzieren"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Content_Security_20"
+    },
+    {
+      "frage": "Was gilt für EU-Verordnungen im Vergleich zu EU-Richtlinien?",
+      "optionen": {
+        "A": "Verordnungen gelten unmittelbar in jedem Mitgliedstaat",
+        "B": "Richtlinien müssen in nationales Recht umgesetzt werden",
+        "C": "Verordnungen sind für Deutschland nicht bindend",
+        "D": "Richtlinien sind unmittelbar gültig"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche dieser Regelungen zählt zur NIS-2-Richtlinie?",
+      "optionen": {
+        "A": "Meldepflichten bei Sicherheitsvorfällen",
+        "B": "Zertifizierungspflicht für Rechenzentren",
+        "C": "Pflichten für Betreiber kritischer Infrastrukturen",
+        "D": "Sanktionsregelungen auf EU-Ebene"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was regelt das BSI-Gesetz (BSIG)?",
+      "optionen": {
+        "A": "Aufgaben und Befugnisse des BSI",
+        "B": "Pflichten für KRITIS-Betreiber",
+        "C": "Datenspeicherung durch Internetanbieter",
+        "D": "Zertifizierung von IT-Produkten"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was ist unter dem 'Stand der Technik' zu verstehen?",
+      "optionen": {
+        "A": "Technische Maßnahmen, die allgemein anerkannt sind",
+        "B": "Rechtlich nicht bindend, aber orientierungsgebend",
+        "C": "Veraltete, aber bewährte Techniken",
+        "D": "Maßnahmen, die durch Normen wie ISO/IEC 27001 beschrieben sind"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Aussage zur DSGVO trifft zu?",
+      "optionen": {
+        "A": "Gilt unmittelbar in allen Mitgliedstaaten",
+        "B": "Ermöglicht nationale Ergänzungsregelungen",
+        "C": "Regelt auch IT-Strafrecht",
+        "D": "Bezieht sich ausschließlich auf staatliche Stellen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Sanktionen sieht Art. 83 DSGVO vor?",
+      "optionen": {
+        "A": "Bis zu 4 % des weltweiten Jahresumsatzes",
+        "B": "10 Jahre Freiheitsstrafe",
+        "C": "Bis zu 20 Mio. € Bußgeld",
+        "D": "Temporärer Lizenzentzug"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was bedeutet der Grundsatz 'Verbot mit Erlaubnisvorbehalt' im Datenschutz?",
+      "optionen": {
+        "A": "Verarbeitung ist nur bei gesetzlicher Grundlage erlaubt",
+        "B": "Grundsätzlich ist jede Datenverarbeitung unzulässig",
+        "C": "Jede Verarbeitung muss genehmigt werden",
+        "D": "Alles ist erlaubt, solange keine Verbote bestehen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Grundsätze regelt Art. 5 DSGVO?",
+      "optionen": {
+        "A": "Zweckbindung",
+        "B": "Integrität und Vertraulichkeit",
+        "C": "Datenminimierung",
+        "D": "E-Mail-Verschlüsselung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was beschreibt der Begriff TOMs in der DSGVO?",
+      "optionen": {
+        "A": "Technische und organisatorische Maßnahmen",
+        "B": "Maßnahmen zur Sicherstellung des Datenschutzes",
+        "C": "Ein Bestandteil der DSGVO-Folgenabschätzung",
+        "D": "Temporär organisierte Maßnahmen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was ist nach DSGVO Voraussetzung für die Verarbeitung personenbezogener Daten?",
+      "optionen": {
+        "A": "Einwilligung der betroffenen Person",
+        "B": "Erfüllung eines Vertrags",
+        "C": "Erfüllung einer rechtlichen Verpflichtung",
+        "D": "Zustimmung der Aufsichtsbehörde"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Norm kann als technische Grundlage für TOMs herangezogen werden?",
+      "optionen": {
+        "A": "ISO/IEC 27001",
+        "B": "NIS-2",
+        "C": "BSI IT-Grundschutz",
+        "D": "DSGVO"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Wann ist ein Datenschutzbeauftragter verpflichtend zu benennen?",
+      "optionen": {
+        "A": "Ab 20 Mitarbeitenden mit automatisierter Datenverarbeitung",
+        "B": "Immer, wenn besondere Kategorien personenbezogener Daten verarbeitet werden",
+        "C": "Nur in Behörden",
+        "D": "Bei internationalem Datentransfer"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Rechte haben betroffene Personen nach DSGVO?",
+      "optionen": {
+        "A": "Auskunft",
+        "B": "Berichtigung",
+        "C": "Löschung",
+        "D": "Datenschutzprüfung beim EuGH"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was ist nach DSGVO bei Datenpannen vorgeschrieben?",
+      "optionen": {
+        "A": "Meldung an Aufsichtsbehörde innerhalb von 72 Stunden",
+        "B": "Information an betroffene Personen, wenn hohes Risiko besteht",
+        "C": "Veröffentlichung im Bundesanzeiger",
+        "D": "Vermerk im Datenschutzbericht"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Vorschriften gelten für Betreiber kritischer Infrastrukturen?",
+      "optionen": {
+        "A": "Meldung von Sicherheitsvorfällen",
+        "B": "Implementierung eines ISMS",
+        "C": "Verwendung national geprüfter Software",
+        "D": "Zusammenarbeit mit dem BSI"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Aussagen zur Pseudonymisierung sind korrekt?",
+      "optionen": {
+        "A": "Reduziert das Risiko bei Datenverarbeitung",
+        "B": "Hebt den Personenbezug vollständig auf",
+        "C": "Ist eine technische Maßnahme gemäß DSGVO",
+        "D": "Gilt als sichere Löschung"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was beschreibt das Prinzip der Datenminimierung?",
+      "optionen": {
+        "A": "Nur so viele Daten wie nötig verarbeiten",
+        "B": "Alle Daten verschlüsseln",
+        "C": "Unnötige Daten regelmäßig löschen",
+        "D": "Vermeidung sensibler Daten"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Besonderheit besteht bei anonymisierten Daten?",
+      "optionen": {
+        "A": "Sie unterliegen nicht der DSGVO",
+        "B": "Sie dürfen beliebig verarbeitet werden",
+        "C": "Sie dürfen nicht weitergegeben werden",
+        "D": "Sie müssen verschlüsselt werden"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was bedeutet 'Zweckbindung' im Datenschutzrecht?",
+      "optionen": {
+        "A": "Datenverarbeitung darf nur für festgelegte Zwecke erfolgen",
+        "B": "Zwecke müssen offen kommuniziert werden",
+        "C": "Nutzung zu Werbezwecken ist immer zulässig",
+        "D": "Zwecke dürfen nachträglich geändert werden"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was ist nach Art. 30 DSGVO zu führen?",
+      "optionen": {
+        "A": "Verzeichnis von Verarbeitungstätigkeiten",
+        "B": "Risikoanalyse",
+        "C": "Zertifizierungsbericht",
+        "D": "Datensicherheitsjournal"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Anforderungen stellt Art. 32 DSGVO an die Sicherheit der Verarbeitung?",
+      "optionen": {
+        "A": "Verfügbarkeit und Belastbarkeit von Systemen",
+        "B": "Verpflichtung zu Backups",
+        "C": "Regelmäßige Überprüfung von TOMs",
+        "D": "Pflicht zur Offenlegung aller Maßnahmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was regelt das IT-Sicherheitsgesetz 2.0 insbesondere?",
+      "optionen": {
+        "A": "Pflichten für KRITIS-Betreiber",
+        "B": "Erweiterung der Meldepflichten",
+        "C": "Einführung von Sicherheitskennzeichen für IT-Produkte",
+        "D": "Vorratsdatenspeicherung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Aussagen zum Cyber Resilience Act (CRA) treffen zu?",
+      "optionen": {
+        "A": "Verordnung auf EU-Ebene",
+        "B": "Verpflichtet Hersteller sicherheitsrelevanter Produkte",
+        "C": "Gilt nur für Behörden",
+        "D": "Seit Dezember 2024 in Kraft"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Gesetze enthalten Regelungen zum Stand der Technik?",
+      "optionen": {
+        "A": "Telekommunikationsgesetz (TKG)",
+        "B": "Kreditwesengesetz (KWG)",
+        "C": "BGB",
+        "D": "DSGVO"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche Rolle spielt die ISO/IEC 27001 im IT-Sicherheitsrecht?",
+      "optionen": {
+        "A": "Als anerkannter Stand der Technik",
+        "B": "Referenz für ISMS",
+        "C": "Nur im privaten Sektor relevant",
+        "D": "Wird durch gesetzliche Verweise bindend"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was regelt § 165 TKG?",
+      "optionen": {
+        "A": "Technische Vorkehrungen zum Schutz personenbezogener Daten",
+        "B": "Einsatz von Verschlüsselungspflicht",
+        "C": "Pflicht zur Beachtung des Standes der Technik",
+        "D": "Zulassung von Fernmeldeeinrichtungen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was umfasst der Begriff 'personenbezogene Daten' laut DSGVO?",
+      "optionen": {
+        "A": "Daten über identifizierbare natürliche Personen",
+        "B": "IP-Adressen, wenn Rückschluss auf Personen möglich ist",
+        "C": "Kennnummern und Standortdaten",
+        "D": "Anonyme Nutzerdaten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Welche TOMs nennt die Anlage zu § 9 BDSG a.F.?",
+      "optionen": {
+        "A": "Zutritts- und Zugangskontrolle",
+        "B": "Weitergabe- und Eingabekontrolle",
+        "C": "Verfügbarkeitskontrolle",
+        "D": "Kennzeichnungspflicht für E-Mails"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was gilt nach EuGH C-340/21 zur Beweislast bei TOMs?",
+      "optionen": {
+        "A": "Verantwortlicher muss Eignung der TOMs nachweisen",
+        "B": "Erfolgte Angriffe beweisen keine Unwirksamkeit",
+        "C": "Beweislast liegt bei der betroffenen Person",
+        "D": "TOMs müssen standardisiert sein"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was bedeutet Zweckbindung im Datenschutz konkret?",
+      "optionen": {
+        "A": "Daten dürfen nur für den festgelegten Zweck genutzt werden",
+        "B": "Zweck muss dokumentiert und nachvollziehbar sein",
+        "C": "Einmal erhobene Daten dürfen beliebig wiederverwendet werden",
+        "D": "Zweckänderungen bedürfen einer neuen Rechtsgrundlage"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "IT_Sicherheitsrecht_30"
+    },
+    {
+      "frage": "Was ist das Ziel betriebswirtschaftlicher Betrachtung von IT-Sicherheit?",
+      "optionen": {
+        "A": "Strategisch sinnvolle Investitionen",
+        "B": "Reduktion auf technische Maßnahmen",
+        "C": "Nachahmung aktueller Trends",
+        "D": "Vermeidung von langfristigen Lösungen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Wie wird Risiko im wirtschaftlichen Sinne definiert?",
+      "optionen": {
+        "A": "Risiko = potenzieller Schaden * Eintrittswahrscheinlichkeit",
+        "B": "Risiko = Investitionssumme / Nutzwert",
+        "C": "Risiko = Aufwand / Ertrag",
+        "D": "Risiko = Imageverlust + Systemversagen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Welche Maßnahmen zur Risikobehandlung kennt man in der Betriebswirtschaft?",
+      "optionen": {
+        "A": "Akzeptieren",
+        "B": "Vermeiden",
+        "C": "Verschlüsseln",
+        "D": "Verlagern"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was ist das Ziel des Paretoprinzips in der IT-Sicherheit?",
+      "optionen": {
+        "A": "Mit 20 % Aufwand 80 % Wirkung erzielen",
+        "B": "Alle Maßnahmen vollständig umzusetzen",
+        "C": "Reduktion von Sicherheit auf Basisfunktionen",
+        "D": "Minimierung von Prozesskosten"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was beschreibt das Minimalprinzip?",
+      "optionen": {
+        "A": "Mit minimalem Aufwand ein vorgegebenes Ziel erreichen",
+        "B": "Mit gegebenem Aufwand ein maximales Ziel erreichen",
+        "C": "Möglichst wenig Maßnahmen umsetzen",
+        "D": "Kein Bezug zur IT-Sicherheit"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was ist RoSI (Return on Security Investment)?",
+      "optionen": {
+        "A": "S - T (Ersparnis - Toolkosten)",
+        "B": "Investitionsrendite von Hardware",
+        "C": "Beziehung zwischen Risiko und Eintrittswahrscheinlichkeit",
+        "D": "Kennzahl zur Passwortsicherheit"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was zählt zu den Kosten nach dem TCO-Prinzip?",
+      "optionen": {
+        "A": "Deployment",
+        "B": "Einkauf",
+        "C": "Administration",
+        "D": "Marketing"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Welche Aussage zu Investitionen in IT-Sicherheit ist korrekt?",
+      "optionen": {
+        "A": "Sie vermindern den Abfluss von Werten",
+        "B": "Sie erhöhen direkt den Umsatz",
+        "C": "Sie sind optional für zertifizierte Unternehmen",
+        "D": "Sie sind immer gewinnorientiert"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was sind typische Nachteile beim Outsourcing von IT-Sicherheit?",
+      "optionen": {
+        "A": "Intransparenz beim Sicherheitsniveau",
+        "B": "Kosten durch Sonderleistungen",
+        "C": "Abgabe der Gesamtverantwortung",
+        "D": "Zuverlässigkeit durch Expertenwissen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Was ist eine zentrale Herausforderung bei der quantitativen Bewertung von Sicherheitsmaßnahmen?",
+      "optionen": {
+        "A": "Unbestimmte Eintrittswahrscheinlichkeiten",
+        "B": "Mangel an qualifiziertem Personal",
+        "C": "Technische Komplexität der Maßnahmen",
+        "D": "Fehlende gesetzliche Anforderungen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "BWL_IT_Sicherheit_10"
+    },
+    {
+      "frage": "Welche Ziele verfolgt physische Sicherheit?",
+      "optionen": {
+        "A": "Schutz von Gebäuden und Personen",
+        "B": "Verhinderung unbefugter Zugriffe",
+        "C": "Absicherung gegen physische Bedrohungen",
+        "D": "Absicherung gegen Malware"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Bedrohungen gelten als natürlich?",
+      "optionen": {
+        "A": "Erdbeben",
+        "B": "Vandalismus",
+        "C": "Hochwasser",
+        "D": "Blitzeinschlag"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Was zählt zu beabsichtigten Bedrohungen?",
+      "optionen": {
+        "A": "Diebstahl",
+        "B": "Terrorismus",
+        "C": "Unwissenheit",
+        "D": "Vandalismus"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die Gebäudesicherheit beim Bau?",
+      "optionen": {
+        "A": "Berücksichtigung der Traglast",
+        "B": "Verwendung entflammbarer Materialien",
+        "C": "Überflutungsschutz",
+        "D": "Brandschutzkonzept"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Punkte zählen zum Zutrittsschutz?",
+      "optionen": {
+        "A": "Zäune und Schleusen",
+        "B": "Alarmanlagen",
+        "C": "Tür- und Fenstersicherungen",
+        "D": "Sichtschutzmaßnahmen"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Bereiche sollten bei der Standortwahl berücksichtigt werden?",
+      "optionen": {
+        "A": "Sichtbarkeit",
+        "B": "Nähe zu Polizei und Feuerwehr",
+        "C": "Nachbarschaft",
+        "D": "Wettervorhersage"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Aspekte betreffen den Schutz vor kompromittierender Strahlung?",
+      "optionen": {
+        "A": "HF-abgeschirmte Räume",
+        "B": "EMV-Maßnahmen",
+        "C": "Geräte mit starker Abstrahlung",
+        "D": "Quellenentstörung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Was umfasst ein Brandschutzkonzept?",
+      "optionen": {
+        "A": "Sprinkleranlagen",
+        "B": "Feuerlöscher",
+        "C": "Brandschutztüren",
+        "D": "Sicherheitssoftware"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Maßnahmen sichern die Stromversorgung?",
+      "optionen": {
+        "A": "USV-Anlagen",
+        "B": "Blitzschutz nach DIN",
+        "C": "Zugangsbeschränkung zu Stromverteilern",
+        "D": "Sichtschutz der Leitungen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Maßnahmen gelten für mobiles Arbeiten?",
+      "optionen": {
+        "A": "Sichtschutzfolien",
+        "B": "Geräte registrieren",
+        "C": "Offene WLANs nutzen",
+        "D": "Geräte nicht unbeaufsichtigt lassen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Aspekte beinhaltet ein Datensicherungskonzept?",
+      "optionen": {
+        "A": "Aufbewahrungsfristen",
+        "B": "Wiederherstellungszeitpunkte",
+        "C": "Löschkonzept",
+        "D": "Nutzung von Social Media"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Anforderungen gelten für Datenträgeraufbewahrung?",
+      "optionen": {
+        "A": "Räumliche Trennung",
+        "B": "Verschlüsselung",
+        "C": "Schutz vor unbefugtem Zugriff",
+        "D": "Zugang über Webinterface"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Methoden gelten als bedingt geeignet zur Datenlöschung?",
+      "optionen": {
+        "A": "Entmagnetisieren",
+        "B": "Überschreiben",
+        "C": "Schreddern",
+        "D": "USB-Abziehen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Was ist bei der sicheren Datenvernichtung zu beachten?",
+      "optionen": {
+        "A": "Vernichtung durch zertifizierte Dienstleister",
+        "B": "Lagerung bis zur Abholung",
+        "C": "Keine Dokumentation nötig",
+        "D": "Restinformationen berücksichtigen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Welche Normen gelten zur Datenlöschung?",
+      "optionen": {
+        "A": "NIST SP 800-88",
+        "B": "DoD 5220.22-M",
+        "C": "ISO 9001",
+        "D": "BSI TL-03305"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Physische_Sicherheit_15"
+    },
+    {
+      "frage": "Was ist ein typisches Hindernis für IT-Sicherheitsmaßnahmen aus Sicht der Anwender?",
+      "optionen": {
+        "A": "Wahrnehmung als Arbeitsbehinderung",
+        "B": "Technische Inkompatibilität",
+        "C": "Fehlende Netzwerkverbindung",
+        "D": "Hoher Stromverbrauch"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Ziele verfolgen Awareness-Maßnahmen?",
+      "optionen": {
+        "A": "Verhaltensänderung der Mitarbeitenden",
+        "B": "Erhöhung der Passwortkomplexität",
+        "C": "Steigerung des Sicherheitsbewusstseins",
+        "D": "Förderung von Regelverletzungen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Social Engineering Methoden existieren?",
+      "optionen": {
+        "A": "Shoulder Surfing",
+        "B": "Dumpster Diving",
+        "C": "Tailgating",
+        "D": "ARP Poisoning"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Aussage beschreibt Social Engineering korrekt?",
+      "optionen": {
+        "A": "Manipulation menschlichen Verhaltens zur Informationsgewinnung",
+        "B": "Automatisiertes Durchsuchen von Logdateien",
+        "C": "Durchführung von Penetrationstests",
+        "D": "Absicherung technischer Systeme"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Was sind Bestandteile einer effektiven Sensibilisierung?",
+      "optionen": {
+        "A": "Vermittlung von Wissen",
+        "B": "Aufbau von Eigenverantwortung",
+        "C": "Darstellung des Nutzens",
+        "D": "Verbot von Informationsaustausch"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Phase gehört nicht zur Awareness-Kampagne?",
+      "optionen": {
+        "A": "Aufmerksamkeit",
+        "B": "Wissen & Einstellung",
+        "C": "Finanzplanung",
+        "D": "Verstärkung"
+      },
+      "richtig": [
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Was ist ein Ziel der Phase 'Öffentlichkeitsarbeit' in einer Awareness-Kampagne?",
+      "optionen": {
+        "A": "Verankerung von IT-Sicherheit als Unternehmenswert",
+        "B": "Verbot von interner Kommunikation",
+        "C": "Einstellung des Awareness-Programms",
+        "D": "Minderung der Sicherheitsstandards"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Maßnahmen eignen sich zur Phase 'Aufmerksamkeit' in Awareness-Kampagnen?",
+      "optionen": {
+        "A": "Flyer und Plakate",
+        "B": "Gewinnspiele",
+        "C": "Personalgespräche mit Betriebsrat",
+        "D": "Einführung neuer Firewalls"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Wie kann Wissen und Einstellung im Unternehmen verbessert werden?",
+      "optionen": {
+        "A": "Web-based Trainings",
+        "B": "Fallbeispiele und Videos",
+        "C": "Zwangsmaßnahmen",
+        "D": "Informationsveranstaltungen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Was ist ein Kriterium zur Erfolgsmessung von Awareness-Kampagnen?",
+      "optionen": {
+        "A": "Anzahl bestandener Phishing-Tests",
+        "B": "Anzahl von Beschwerden",
+        "C": "Mitarbeiterzufriedenheit",
+        "D": "Reichweite interner Kommunikationsmaßnahmen"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Schulungsinhalte sind laut IT-Grundschutz für alle Zielgruppen relevant?",
+      "optionen": {
+        "A": "Informationssicherheit am Arbeitsplatz",
+        "B": "Gesetze und Regularien",
+        "C": "Sicherheit der Infrastruktur",
+        "D": "Informationssicherheitsmanagement"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Was zählt zur Phase der Verstärkung in einer Awareness-Kampagne?",
+      "optionen": {
+        "A": "Preisverleihungen",
+        "B": "Erneute Webinare",
+        "C": "Broschüren und Give-Aways",
+        "D": "Veröffentlichung in Fachzeitschriften"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Zielgruppen sollten bei Awareness-Maßnahmen berücksichtigt werden?",
+      "optionen": {
+        "A": "Management",
+        "B": "Administrator:innen",
+        "C": "Externe Mitarbeitende",
+        "D": "Nur IT-Fachkräfte"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Faktoren beeinflussen den Erfolg von Awareness-Maßnahmen?",
+      "optionen": {
+        "A": "Management-Support",
+        "B": "Verständliche Darstellung",
+        "C": "Budgetverfügbarkeit",
+        "D": "Komplexität der IT-Systeme"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Welche Standards behandeln Schulung und Sensibilisierung?",
+      "optionen": {
+        "A": "ISO 27001 – Abschnitt 7",
+        "B": "ISO 27002 – Personalsicherheit",
+        "C": "IT-Grundschutzkompendium – ISMS.1.A14",
+        "D": "PCI-DSS – Abschnitt 12"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Awareness_Endanwendersicherheit_15"
+    },
+    {
+      "frage": "Was ist das oberste Ziel des Notfallmanagements laut BSI-Standard 100-4?",
+      "optionen": {
+        "A": "Reduktion von Administrationsaufwand",
+        "B": "Aufrechterhaltung kritischer Geschäftsprozesse",
+        "C": "Minimierung der Auswirkungen von Schadensereignissen",
+        "D": "Verbesserung der Unternehmenskultur"
+      },
+      "richtig": [
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was zeichnet ein effektives BCM aus?",
+      "optionen": {
+        "A": "Ist als Prozess angelegt",
+        "B": "Einmalige Projektumsetzung",
+        "C": "Enthält eine BCM-Policy mit Scope",
+        "D": "Ist unabhängig vom IT-Grundschutz"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Vorteile bietet ein etabliertes BCM?",
+      "optionen": {
+        "A": "Steigerung der Widerstandsfähigkeit",
+        "B": "Förderung anderer Managementsysteme",
+        "C": "Reduktion von Prüfpflichten",
+        "D": "Reduktion des Dokumentationsaufwands"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Phasen gehören zum PDCA-Zyklus im BCM?",
+      "optionen": {
+        "A": "Plan",
+        "B": "Do",
+        "C": "Check",
+        "D": "Act"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was ist die Business Impact Analyse (BIA)?",
+      "optionen": {
+        "A": "Identifikation kritischer Geschäftsprozesse",
+        "B": "Analyse möglicher Schadensauswirkungen",
+        "C": "Auswahl geeigneter Schutzmaßnahmen",
+        "D": "Bewertung technischer Systemleistungen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Schritte gehören zur Durchführung einer BIA?",
+      "optionen": {
+        "A": "Schadensanalyse",
+        "B": "Wiederaufnahmeparameter definieren",
+        "C": "Abstimmung mit Datenschutzbeauftragtem",
+        "D": "Erhebung von Ressourcen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Schadenskategorien definiert eine BIA?",
+      "optionen": {
+        "A": "Gering",
+        "B": "Mittel",
+        "C": "Existenzbedrohend",
+        "D": "Haftungsrelevant"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Varianten der Notfallvorsorge existieren?",
+      "optionen": {
+        "A": "Minimale Lösung",
+        "B": "Mittlere Lösung",
+        "C": "Maximale Lösung",
+        "D": "Hybride Lösung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was ist Bestandteil eines Notfallplans?",
+      "optionen": {
+        "A": "Sofortmaßnahmenplan",
+        "B": "Kommunikationsplan",
+        "C": "Rechenzentrumsausbau",
+        "D": "Wiederanlaufpläne"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Maßnahmen sind Teil der Zutrittskontrolle?",
+      "optionen": {
+        "A": "Perimeterschutz",
+        "B": "Einbruchschutz",
+        "C": "Zutrittsprotokollierung",
+        "D": "Abschaltung des Internetzugangs"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Bestandteile gehören zur Notfallvorsorge laut BSI?",
+      "optionen": {
+        "A": "Maßnahmenplanung",
+        "B": "Dokumentationsrichtlinien",
+        "C": "Einbindung in Unternehmenskultur",
+        "D": "ISO-Zertifizierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Arten von Notfallübungen gibt es?",
+      "optionen": {
+        "A": "Planbesprechung",
+        "B": "Stabsübung",
+        "C": "Simulation",
+        "D": "Krisenvermeidung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Ziele verfolgt die externe Krisenkommunikation?",
+      "optionen": {
+        "A": "Verfügbare Kommunikationskanäle definieren",
+        "B": "Strategien für externe Zielgruppen entwickeln",
+        "C": "Zugang zu vertraulichen Informationen einschränken",
+        "D": "Organisationsstruktur für die Kommunikation festlegen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was sind typische Inhalte eines BCM-Konzepts?",
+      "optionen": {
+        "A": "Krisenkommunikationsstrategie",
+        "B": "Technische Infrastrukturplanung",
+        "C": "Pläne zur Wiederaufnahme kritischer Prozesse",
+        "D": "Aufbau des Krisenstabs"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Norm beschreibt Anforderungen an ein BCM-System?",
+      "optionen": {
+        "A": "ISO 22301",
+        "B": "ISO 27001",
+        "C": "BSI-Standard 100-4",
+        "D": "ISO 27031"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was ist Ziel eines Management Reviews im BCM?",
+      "optionen": {
+        "A": "Überprüfung der Wirksamkeit des BCM",
+        "B": "Einführung neuer IT-Systeme",
+        "C": "Bewertung aktueller Maßnahmen",
+        "D": "Ableitung von Verbesserungen"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was ist ein typisches Ergebnis der Business Impact Analyse?",
+      "optionen": {
+        "A": "Liste kritischer Geschäftsprozesse",
+        "B": "Risikomatrix für IT-Systeme",
+        "C": "Definition von Wiederanlaufzeiten",
+        "D": "Festlegung von Kommunikationswegen"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was beschreibt der Begriff 'Kritikalität' im BCM?",
+      "optionen": {
+        "A": "Bedeutung eines Prozesses für das Unternehmen",
+        "B": "Sicherheitsniveau der IT-Systeme",
+        "C": "Dringlichkeit der Wiederherstellung",
+        "D": "Abhängigkeit von Zulieferern"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Welche Aufgabe hat das BCM im Krisenfall?",
+      "optionen": {
+        "A": "Sicherung des Geschäftsbetriebs",
+        "B": "Einsatzplanung von Krisenkräften",
+        "C": "Schutz von Unternehmenswerten",
+        "D": "Koordination der Notfallmaßnahmen"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was unterscheidet Business Continuity von Incident Response?",
+      "optionen": {
+        "A": "BCM zielt auf Aufrechterhaltung von Prozessen ab",
+        "B": "Incident Response ist reaktiver Natur",
+        "C": "BCM ersetzt Incident Response vollständig",
+        "D": "BCM ist Bestandteil des Informationssicherheitsmanagements"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "BCM_Notfallmanagement_20"
+    },
+    {
+      "frage": "Was ist der Unterschied zwischen Authentisierung und Authentifizierung?",
+      "optionen": {
+        "A": "Authentisierung ist das Belegen einer Identität",
+        "B": "Authentifizierung ist das Prüfen einer Identität",
+        "C": "Beide Begriffe sind synonym",
+        "D": "Authentisierung erfolgt ausschließlich biometrisch"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Faktoren gehören zur starken Authentifizierung?",
+      "optionen": {
+        "A": "Wissen",
+        "B": "Besitz",
+        "C": "Inhärenz",
+        "D": "IP-Adresse"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Passwörtern sind korrekt?",
+      "optionen": {
+        "A": "Sie sollten per Hash + Salt gespeichert werden",
+        "B": "Sie gelten als günstig in der Implementierung",
+        "C": "Passwortlänge ist sicherheitsrelevant",
+        "D": "Sie dürfen im Klartext gespeichert werden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was ist ein Challenge-Response-Verfahren?",
+      "optionen": {
+        "A": "Antwort auf eine vom System gestellte Aufgabe",
+        "B": "Verwendung eines geteilten Geheimnisses",
+        "C": "Nutzung von Public Key Infrastructure",
+        "D": "Beispiel für eine symmetrische Authentifizierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Protokolle unterstützen Authentifizierung in verteilten Systemen?",
+      "optionen": {
+        "A": "Kerberos",
+        "B": "RADIUS",
+        "C": "Diameter",
+        "D": "OAuth"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Merkmale hat RADIUS?",
+      "optionen": {
+        "A": "Verwendet UDP",
+        "B": "Einseitige Authentifizierung",
+        "C": "Protokolliert Nutzeraktionen",
+        "D": "Verwendet TLS für alle Nachrichten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Kerberos sind korrekt?",
+      "optionen": {
+        "A": "Nutzt Tickets zur Authentifizierung",
+        "B": "Verwendet ein zentrales KDC",
+        "C": "Basierend auf symmetrischer Kryptografie",
+        "D": "Verwendet ausschließlich asymmetrische Verfahren"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was ist Ziel der Autorisierung?",
+      "optionen": {
+        "A": "Zuweisung von Rechten zu Identitäten",
+        "B": "Bestätigung von Identitäten",
+        "C": "Überprüfung von Zugriffsrechten",
+        "D": "Verwaltung von Identitäten"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zur Zugriffskontrolle sind korrekt?",
+      "optionen": {
+        "A": "Wiederholte Prüfung der Rechte bei Zugriff",
+        "B": "Basiert auf Subjekt, Objekt, Operation",
+        "C": "Verhält sich passiv im System",
+        "D": "Ist ein optionaler Bestandteil der IT-Sicherheit"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu RBAC sind korrekt?",
+      "optionen": {
+        "A": "Rollen basieren auf typischen Aufgaben",
+        "B": "Reduziert die Komplexität der Rechtevergabe",
+        "C": "Ist mit Rollenhierarchien erweiterbar",
+        "D": "Ersetzt vollständig alle Zugriffskontrolllisten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu biometrischen Merkmalen sind korrekt?",
+      "optionen": {
+        "A": "Dienen der Identifizierung oder Authentifizierung",
+        "B": "Können statisch oder dynamisch sein",
+        "C": "Sind vollständig fälschungssicher",
+        "D": "Beispiel: Retina-Scan oder Stimme"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu One-Time-Passwords (OTP) treffen zu?",
+      "optionen": {
+        "A": "Sind nur einmal gültig",
+        "B": "Verhindern Replay-Angriffe",
+        "C": "Werden nur hardwarebasiert umgesetzt",
+        "D": "Eignen sich auch für Webseiten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aufgaben erfüllt ein Identitätsmanagementsystem?",
+      "optionen": {
+        "A": "Verwaltung von Benutzerdaten und Rollen",
+        "B": "Authentifizierung von Netzwerkteilnehmern",
+        "C": "Synchronisation von Benutzerprofilen",
+        "D": "Erstellung kryptografischer Schlüssel"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was umfasst das Berechtigungsmanagement?",
+      "optionen": {
+        "A": "Zuweisung von Zugriffen auf Ressourcen",
+        "B": "Kontrolle und Dokumentation von Rechten",
+        "C": "Verteilung von privaten Schlüsseln",
+        "D": "Vermeidung widersprüchlicher Rechtevergabe"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was beschreibt ein Access Control List (ACL)?",
+      "optionen": {
+        "A": "Zuweisung spezifischer Rechte für Subjekte",
+        "B": "Berechtigungsschema auf Objektebene",
+        "C": "Ermöglicht zentrale Netzwerksperren",
+        "D": "Basiert auf Rollenzuweisung"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu Single Sign-On (SSO) sind korrekt?",
+      "optionen": {
+        "A": "Einmalige Authentifizierung pro Sitzung",
+        "B": "Ermöglicht Zugriff auf mehrere Dienste",
+        "C": "Komplexe Vertrauensstruktur erforderlich",
+        "D": "Verringert die Sicherheit grundsätzlich"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Protokolle ermöglichen SSO?",
+      "optionen": {
+        "A": "OAuth",
+        "B": "SAML",
+        "C": "OpenID Connect",
+        "D": "LDAP"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Risiken sind bei SSO zu beachten?",
+      "optionen": {
+        "A": "Kompromittierung einer einzigen Authentifizierung",
+        "B": "Verlust der Zugangskontrolle",
+        "C": "Zentrale Sichtbarkeit durch Identity Provider",
+        "D": "Schutz gegen Phishing ist automatisch gegeben"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was ist OpenID Connect?",
+      "optionen": {
+        "A": "Authentifizierungsprotokoll auf Basis von OAuth",
+        "B": "Protokoll zur Autorisierung",
+        "C": "Ermöglicht dezentrales Identitätsmanagement",
+        "D": "Nutzt ausschließlich Public-Key-Kryptografie"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Aussagen zu OAuth sind korrekt?",
+      "optionen": {
+        "A": "Regelt Zugriff auf Ressourcen ohne Passwortweitergabe",
+        "B": "Ermöglicht SSO mit OIDC",
+        "C": "Ist für Autorisierung konzipiert",
+        "D": "Ersetzt die Passwort-Authentifizierung vollständig"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche drei Grundelemente umfasst Zugriffskontrolle?",
+      "optionen": {
+        "A": "Subjekt",
+        "B": "Objekt",
+        "C": "Operation",
+        "D": "Authentisierungszeitpunkt"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Ziele verfolgt Zutrittskontrolle in Unternehmen?",
+      "optionen": {
+        "A": "Schutz physischer Bereiche",
+        "B": "Verwaltung von Backup-Systemen",
+        "C": "Schließsysteme und Zutrittsberechtigungen",
+        "D": "Schutz vor externem Personal"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche technischen Maßnahmen unterstützen Zugangskontrolle?",
+      "optionen": {
+        "A": "Firewalls",
+        "B": "IDS-Systeme",
+        "C": "Logging",
+        "D": "USB-Sticks"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was sind Vorteile von RBAC gegenüber ACLs?",
+      "optionen": {
+        "A": "Zentrale Verwaltung über Rollen",
+        "B": "Reduktion individueller Rechtevergabe",
+        "C": "Skalierbarkeit für größere Organisationen",
+        "D": "Verzicht auf Authentifizierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Rollen erfüllt eine Trusted Execution Environment (TEE)?",
+      "optionen": {
+        "A": "Schutz sensibler Authentifizierungsprozesse",
+        "B": "Ausführung sicherheitskritischer Codeabschnitte",
+        "C": "Speicherung öffentlicher Schlüssel",
+        "D": "Verschlüsselung der Hardware selbst"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Vorteile bietet die Trennung von Authentisierung und Autorisierung?",
+      "optionen": {
+        "A": "Bessere Skalierbarkeit",
+        "B": "Feingranulare Zugriffskontrolle",
+        "C": "Höhere Sicherheitsflexibilität",
+        "D": "Erlaubt rollenbasierte Rechtevergabe"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Rolle spielt die Inhärenz bei MFA?",
+      "optionen": {
+        "A": "Nutzt biometrische Merkmale",
+        "B": "Bezieht sich auf bekannte Informationen",
+        "C": "Erhöht Sicherheit gegen Diebstahl",
+        "D": "Ist unabhängig vom Nutzer"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Maßnahmen dienen zur Stärkung der Passwortsicherheit?",
+      "optionen": {
+        "A": "Verwendung von Salts",
+        "B": "Lange und komplexe Passwörter",
+        "C": "Hashing von Passwörtern",
+        "D": "Speichern im Klartext"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Vorteile bietet Hardware-basierte Authentifizierung?",
+      "optionen": {
+        "A": "Schutz vor Phishing",
+        "B": "Kann mit PIN kombiniert werden",
+        "C": "Erhöht Komfort und Sicherheit",
+        "D": "Kann nicht verloren gehen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Was ist Ziel eines Identitätsmanagementsystems?",
+      "optionen": {
+        "A": "Reduktion des Verwaltungsaufwands",
+        "B": "Zentrale Benutzerverwaltung",
+        "C": "Erleichterung von Rollenmanagement",
+        "D": "Erstellung von PKI-Zertifikaten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Authentifizierung_Autorisierung_30"
+    },
+    {
+      "frage": "Welche Risiken sind mit mobilen Endgeräten besonders verbunden?",
+      "optionen": {
+        "A": "Verlust oder Diebstahl",
+        "B": "Unverschlüsselte Kommunikation",
+        "C": "Unkontrollierte App-Installationen",
+        "D": "Stromverbrauch"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was ist ein wesentliches Ziel beim Schutz mobiler Geräte?",
+      "optionen": {
+        "A": "Sicherstellung von Datenverfügbarkeit",
+        "B": "Geräte möglichst unauffällig gestalten",
+        "C": "Kontrolle über installierte Software",
+        "D": "Reduktion der Akkulaufzeit"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Sicherheitsmaßnahmen sind bei Verlust eines Geräts hilfreich?",
+      "optionen": {
+        "A": "Verschlüsselung der Daten",
+        "B": "Remote Wipe",
+        "C": "VPN-Tunnel",
+        "D": "Gerät mit Fingerabdrucksensor ausstatten"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Risiken bestehen bei privaten Apps auf dienstlichen Geräten?",
+      "optionen": {
+        "A": "Datenspeicherung außerhalb der Kontrolle",
+        "B": "Sicherheitslücken durch unkontrollierten Code",
+        "C": "Unklare Berechtigungen",
+        "D": "Erhöhter Akkuverbrauch"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was versteht man unter Mobile Device Management (MDM)?",
+      "optionen": {
+        "A": "Zentrale Verwaltung mobiler Geräte",
+        "B": "Kontrolle über Geräteeinstellungen und -zugriffe",
+        "C": "Einrichtung von Musikdiensten",
+        "D": "Update-Management für PCs"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Funktionen bietet ein MDM-System typischerweise?",
+      "optionen": {
+        "A": "Zugriffssteuerung",
+        "B": "Gerätekonfiguration",
+        "C": "Sperren oder Löschen von Geräten",
+        "D": "Installation von Antiviren-Apps"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was versteht man unter Container-Lösungen?",
+      "optionen": {
+        "A": "Trennung privater und dienstlicher Daten",
+        "B": "Virtualisierung ganzer Geräte",
+        "C": "Trennung von App-Berechtigungen",
+        "D": "Mechanische Sicherheitsgehäuse"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was beschreibt BYOD?",
+      "optionen": {
+        "A": "Bring Your Own Device",
+        "B": "Nutzung privater Geräte für berufliche Zwecke",
+        "C": "Verbot von mobilen Geräten",
+        "D": "Verwaltung durch Arbeitgeber"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Herausforderungen bringt BYOD mit sich?",
+      "optionen": {
+        "A": "Sicherstellung der Unternehmensrichtlinien",
+        "B": "Mangelnde Kontrolle über private Apps",
+        "C": "Verschlüsselung privater Daten durch das Unternehmen",
+        "D": "Nutzung von Dual SIM"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was sind typische Sicherheitsfunktionen moderner Mobilbetriebssysteme?",
+      "optionen": {
+        "A": "App-Rechtemanagement",
+        "B": "Verschlüsselung",
+        "C": "Biometrische Authentifizierung",
+        "D": "Automatische Datenfreigabe"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was kann die Nutzung öffentlicher WLANs unsicher machen?",
+      "optionen": {
+        "A": "Man-in-the-Middle-Angriffe",
+        "B": "Fehlende Verschlüsselung",
+        "C": "DNS-Spoofing",
+        "D": "Energieverbrauch des Geräts"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die WLAN-Sicherheit mobiler Geräte?",
+      "optionen": {
+        "A": "VPN-Nutzung",
+        "B": "SSID-Filterung",
+        "C": "Firewall auf dem Endgerät",
+        "D": "NFC-Aktivierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was zählt zu den physischen Schutzmaßnahmen mobiler Geräte?",
+      "optionen": {
+        "A": "Display-Sperre",
+        "B": "Diebstahlsicherung",
+        "C": "Sicherer Aufbewahrungsort",
+        "D": "Offline-Modus"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Maßnahmen schützen gegen App-basierte Angriffe?",
+      "optionen": {
+        "A": "Nur offizielle App-Stores nutzen",
+        "B": "Berechtigungen prüfen",
+        "C": "Regelmäßige Updates",
+        "D": "Root-Zugriff aktivieren"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was sind mögliche Schwächen mobiler Betriebssysteme?",
+      "optionen": {
+        "A": "Sicherheitslücken bei Release",
+        "B": "Herstellerspezifische Anpassungen",
+        "C": "Langsame Update-Versorgung",
+        "D": "Zu viele Benutzerkonten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was ist beim Geräteaustausch zu beachten?",
+      "optionen": {
+        "A": "Löschen sensibler Daten",
+        "B": "Zurücksetzen auf Werkseinstellungen",
+        "C": "Backup alter Daten",
+        "D": "Abgabe an unbekannte Dritte"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was ist ein Vorteil von biometrischer Authentifizierung?",
+      "optionen": {
+        "A": "Bequeme Zugangskontrolle",
+        "B": "Hoher Schutz vor Fremdzugriff",
+        "C": "Keine Speicherung in der Cloud",
+        "D": "Ersetzt regelmäßige Passwortwechsel"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Funktionen bietet eine Mobile Threat Defense (MTD)?",
+      "optionen": {
+        "A": "Verhaltensanalyse",
+        "B": "Integritätsprüfung",
+        "C": "Schutz vor Phishing",
+        "D": "App-Entwicklung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was ist ein typischer Angriffsvektor bei mobilen Geräten?",
+      "optionen": {
+        "A": "Bösartige QR-Codes",
+        "B": "Bluetooth-Exploits",
+        "C": "Zugriff über SIM-Karten",
+        "D": "Geräte-PIN"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Welche Funktionen sollte eine Mobile-Security-Richtlinie enthalten?",
+      "optionen": {
+        "A": "Gerätesperrung bei Inaktivität",
+        "B": "App-Whitelist",
+        "C": "Passwortvorgaben",
+        "D": "Root-Vorschrift"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Mobile_Endgeraete_20"
+    },
+    {
+      "frage": "Was versteht man unter einem Sicherheitsvorfall im Sinne des Incident Managements?",
+      "optionen": {
+        "A": "Ein tatsächlicher oder vermuteter Verstoß gegen die Informationssicherheit",
+        "B": "Ein geplanter Penetrationstest",
+        "C": "Ein routinemäßiger Systemneustart",
+        "D": "Ein positives Audit-Ergebnis"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was ist ein Ziel des Incident Managements?",
+      "optionen": {
+        "A": "Schnelle Wiederherstellung des Normalbetriebs",
+        "B": "Verhinderung jeglicher Vorfälle",
+        "C": "Ausführung von Geschäftsprozessen",
+        "D": "Prozessoptimierung in der Buchhaltung"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Phasen gehören typischerweise zum Incident Management?",
+      "optionen": {
+        "A": "Erkennung",
+        "B": "Analyse",
+        "C": "Behebung",
+        "D": "Verkauf"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was ist eine Aufgabe der Erstmeldung im Incident Management?",
+      "optionen": {
+        "A": "Schnelles Weiterleiten von Informationen an das Sicherheitsteam",
+        "B": "Schadensersatz anfordern",
+        "C": "Systeme automatisch neu starten",
+        "D": "Incident löschen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Aussage beschreibt den Begriff 'Containment' korrekt?",
+      "optionen": {
+        "A": "Eindämmung eines Vorfalls zur Vermeidung weiterer Schäden",
+        "B": "Langfristige Beseitigung der Ursache",
+        "C": "Bericht an die Geschäftsführung",
+        "D": "Automatische Eskalation"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Rollen spielen bei der Incident Response eine wichtige Rolle?",
+      "optionen": {
+        "A": "IT-Sicherheitsbeauftragter",
+        "B": "CSIRT",
+        "C": "Personalabteilung",
+        "D": "Fachbereichsverantwortliche"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was ist ein CSIRT?",
+      "optionen": {
+        "A": "Computer Security Incident Response Team",
+        "B": "Ein Hersteller von Antivirenprogrammen",
+        "C": "Ein externer Dienstleister zur Systemwartung",
+        "D": "Ein Krisenstab für Naturkatastrophen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Maßnahmen gehören zur Nachbereitung eines Sicherheitsvorfalls?",
+      "optionen": {
+        "A": "Lessons Learned",
+        "B": "Dokumentation",
+        "C": "Anpassung von Maßnahmen",
+        "D": "Erneute Installation von Office-Software"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was sollte ein Incident-Response-Plan enthalten?",
+      "optionen": {
+        "A": "Kontaktinformationen",
+        "B": "Verantwortlichkeiten",
+        "C": "Kommunikationswege",
+        "D": "E-Mail-Adressen aller Mitarbeitenden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was ist das Ziel von Forensik im Rahmen des Incident Managements?",
+      "optionen": {
+        "A": "Nachvollziehbarkeit und Beweissicherung",
+        "B": "Verkürzung von Backup-Zeiten",
+        "C": "Optimierung von Logdateien",
+        "D": "Verteilung von Benutzerrechten"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Systeme sind besonders relevant für forensische Untersuchungen?",
+      "optionen": {
+        "A": "Logserver",
+        "B": "Firewalls",
+        "C": "Mailserver",
+        "D": "Projektplanungssoftware"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Aussage zur Kommunikationsstrategie bei Sicherheitsvorfällen ist korrekt?",
+      "optionen": {
+        "A": "Interne und externe Kommunikation muss geregelt sein",
+        "B": "Es darf keine Kommunikation mit der Presse erfolgen",
+        "C": "Nur IT-Fachleute werden informiert",
+        "D": "Kunden erhalten automatische Warnungen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Rolle spielen Logdaten im Incident Management?",
+      "optionen": {
+        "A": "Ermöglichen Rückverfolgbarkeit von Aktivitäten",
+        "B": "Dienen der Ursachenanalyse",
+        "C": "Sind irrelevant bei Hardwareausfällen",
+        "D": "Werden automatisch gelöscht"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Was bedeutet Eskalation in einem Incident-Prozess?",
+      "optionen": {
+        "A": "Weitergabe an zuständige oder höhere Stelle",
+        "B": "Automatische Abschaltung des Servers",
+        "C": "Verweis an das Marketing",
+        "D": "Keine Reaktion bei Vorfällen"
+      },
+      "richtig": [
+        "A"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Bedeutung hat die Vorbereitung im Incident Management?",
+      "optionen": {
+        "A": "Stellt sicher, dass Prozesse und Teams bereit sind",
+        "B": "Reduziert Reaktionszeiten",
+        "C": "Vermeidet notwendige Investitionen",
+        "D": "Verhindert Schulungen"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Incident_Management_15"
+    },
+    {
+      "frage": "Welche Dimensionen umfasst das Schutzziel Vertraulichkeit?",
+      "optionen": {
+        "A": "Zugriff nur durch Berechtigte",
+        "B": "Verschlüsselung von Daten",
+        "C": "Vermeidung von Informationsabfluss",
+        "D": "Transparenz aller Datenzugriffe"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was zählt zu den klassischen Grundwerten der Informationssicherheit?",
+      "optionen": {
+        "A": "Vertraulichkeit",
+        "B": "Integrität",
+        "C": "Verfügbarkeit",
+        "D": "Nutzbarkeit"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was sind zusätzliche Schutzziele laut IT-Grundschutz?",
+      "optionen": {
+        "A": "Zurechenbarkeit",
+        "B": "Authentizität",
+        "C": "Anonymität",
+        "D": "Transparenz"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Risiken entstehen bei fehlender Informationssicherheit?",
+      "optionen": {
+        "A": "Imageverlust",
+        "B": "Rechtsverletzungen",
+        "C": "Produktivitätsausfälle",
+        "D": "Erhöhte Lizenzkosten"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was ist eine typische Bedrohung für die Integrität?",
+      "optionen": {
+        "A": "Manipulation von Daten",
+        "B": "Virenbefall",
+        "C": "Hardwaredefekt",
+        "D": "Nicht autorisierter Zugriff"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was sind typische Maßnahmen zur Sicherstellung der Verfügbarkeit?",
+      "optionen": {
+        "A": "Redundante Systeme",
+        "B": "USV (unterbrechungsfreie Stromversorgung)",
+        "C": "Backups",
+        "D": "Datenschutzfolgeabschätzung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was ist eine typische Motivation für Angreifer?",
+      "optionen": {
+        "A": "Finanzielle Gewinne",
+        "B": "Ideologische Beweggründe",
+        "C": "Technische Neugier",
+        "D": "Produktentwicklung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Kategorien von Angreifern werden unterschieden?",
+      "optionen": {
+        "A": "Script Kiddies",
+        "B": "Hacktivisten",
+        "C": "Insider",
+        "D": "Rechenzentrumsbetreiber"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Angriffsarten gelten als technisch?",
+      "optionen": {
+        "A": "SQL Injection",
+        "B": "Denial of Service",
+        "C": "Phishing",
+        "D": "Social Engineering"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was zählt zu den nicht-technischen Angriffen?",
+      "optionen": {
+        "A": "Shoulder Surfing",
+        "B": "Social Engineering",
+        "C": "Tailgating",
+        "D": "Ransomware"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was ist Ziel der IT-Sicherheit?",
+      "optionen": {
+        "A": "Minimierung von Risiken",
+        "B": "Schutz vor Datenverlust",
+        "C": "Verhinderung jeder Attacke",
+        "D": "Wirtschaftlicher Betrieb sicherer IT"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Rolle spielt der Mensch in der Informationssicherheit?",
+      "optionen": {
+        "A": "Er ist häufig Schwachstelle",
+        "B": "Er kann Sicherheitsvorfälle verursachen",
+        "C": "Er kann durch Schulung zur Sicherheit beitragen",
+        "D": "Er wird meist nicht berücksichtigt"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was ist ein Schutzbedarf?",
+      "optionen": {
+        "A": "Abhängig von Schadensauswirkungen",
+        "B": "Kategorisiert in normal, hoch, sehr hoch",
+        "C": "Wird für alle Informationen gleich festgelegt",
+        "D": "Grundlage für Sicherheitsmaßnahmen"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Aufgaben hat ein ISMS?",
+      "optionen": {
+        "A": "Planung und Umsetzung von Sicherheitsmaßnahmen",
+        "B": "Reaktion auf Sicherheitsvorfälle",
+        "C": "Wirtschaftlichkeitsanalyse von Angriffen",
+        "D": "Dokumentation und Auditierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Was ist die wichtigste Voraussetzung für effektive Informationssicherheit?",
+      "optionen": {
+        "A": "Unterstützung durch das Management",
+        "B": "Einsatz modernster Firewalls",
+        "C": "IT-Abteilung mit Root-Rechten",
+        "D": "Regelmäßige Kontrolle und Verbesserung"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "Einfuehrung_Grundlagen_15"
+    },
+    {
+      "frage": "Welche Vorteile bietet Virtualisierung im Kontext der IT-Sicherheit?",
+      "optionen": {
+        "A": "Isolation von Systemen",
+        "B": "Einfache Wiederherstellung durch Snapshots",
+        "C": "Reduzierter Energieverbrauch",
+        "D": "Erhöhte Komplexität und Angriffsfläche"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was beschreibt ein Hypervisor vom Typ 1?",
+      "optionen": {
+        "A": "Läuft direkt auf der Hardware",
+        "B": "Benötigt kein Host-Betriebssystem",
+        "C": "Ist vergleichbar mit VirtualBox",
+        "D": "Typisch für Bare-Metal-Server"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was trifft auf Hypervisor vom Typ 2 zu?",
+      "optionen": {
+        "A": "Läuft innerhalb eines Host-Betriebssystems",
+        "B": "Beispiel: VMware Workstation",
+        "C": "Direkter Hardwarezugriff",
+        "D": "Kommt typischerweise in Rechenzentren zum Einsatz"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was ist ein Snapshot in virtuellen Umgebungen?",
+      "optionen": {
+        "A": "Speichert den Zustand einer VM zu einem Zeitpunkt",
+        "B": "Ersetzt ein vollständiges Backup",
+        "C": "Kann zur Wiederherstellung verwendet werden",
+        "D": "Verändert die MAC-Adresse der VM"
+      },
+      "richtig": [
+        "A",
+        "C"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Sicherheitsrisiken birgt Virtualisierung?",
+      "optionen": {
+        "A": "Escape-Angriffe",
+        "B": "Schwachstellen im Hypervisor",
+        "C": "Isolation durch Container",
+        "D": "Fehlende Netzwerksegmentierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was versteht man unter einem Escape-Angriff?",
+      "optionen": {
+        "A": "Ein Angriff aus einer VM auf den Hypervisor",
+        "B": "Ein Angriff aus einer VM auf andere VMs",
+        "C": "Ein Brute-Force-Angriff auf das BIOS",
+        "D": "Ein Angriff auf verschlüsselte Backups"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Maßnahmen erhöhen die Sicherheit in virtualisierten Umgebungen?",
+      "optionen": {
+        "A": "Trennung von Verwaltungs- und Produktivnetz",
+        "B": "Regelmäßige Hypervisor-Updates",
+        "C": "Root-Zugriff auf alle VMs gewähren",
+        "D": "Verwendung von VLANs"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Virtualisierungsarten existieren?",
+      "optionen": {
+        "A": "Hardwarevirtualisierung",
+        "B": "Betriebssystemvirtualisierung",
+        "C": "Anwendungsvirtualisierung",
+        "D": "Dateisystemvirtualisierung"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was unterscheidet Container von klassischen VMs?",
+      "optionen": {
+        "A": "Container teilen sich den Kernel des Hosts",
+        "B": "Container sind ressourcenschonender",
+        "C": "Container benötigen ein eigenes OS",
+        "D": "VMs starten schneller als Container"
+      },
+      "richtig": [
+        "A",
+        "B"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was beschreibt die Funktion eines Virtual Switch?",
+      "optionen": {
+        "A": "Verbindet virtuelle Netzwerkkarten",
+        "B": "Erlaubt Netzwerksegmentierung",
+        "C": "Ersetzt physische Router",
+        "D": "Kann VLANs abbilden"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Komponenten gehören typischerweise zu einer Virtualisierungsplattform?",
+      "optionen": {
+        "A": "Hypervisor",
+        "B": "Management-Konsole",
+        "C": "Speichermanager",
+        "D": "RAID-Controller"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was sind Vorteile von Server-Konsolidierung durch Virtualisierung?",
+      "optionen": {
+        "A": "Weniger Hardwarebedarf",
+        "B": "Bessere Ressourcennutzung",
+        "C": "Höherer Stromverbrauch",
+        "D": "Einfachere Administration"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Herausforderungen bestehen beim Backup virtualisierter Systeme?",
+      "optionen": {
+        "A": "Konsistenz laufender VMs",
+        "B": "Snapshots ersetzen vollständige Backups",
+        "C": "Integration in zentrale Backup-Lösungen",
+        "D": "Risiken bei inkrementellen Backups"
+      },
+      "richtig": [
+        "A",
+        "C",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Welche Rolle spielt die VM-Vorlagenfunktion?",
+      "optionen": {
+        "A": "Ermöglicht schnelles Ausrollen standardisierter Systeme",
+        "B": "Ersetzt den Hypervisor",
+        "C": "Dient der Zugriffskontrolle",
+        "D": "Verringert Konfigurationsfehler"
+      },
+      "richtig": [
+        "A",
+        "D"
+      ],
+      "modul": "Virtualisierung_15"
+    },
+    {
+      "frage": "Was sind Vorteile des Einsatzes von VLANs in virtualisierten Netzwerken?",
+      "optionen": {
+        "A": "Trennung von Netzbereichen",
+        "B": "Reduktion von Broadcast-Domänen",
+        "C": "Ermöglicht flexible Segmentierung",
+        "D": "Ersetzt Firewalls vollständig"
+      },
+      "richtig": [
+        "A",
+        "B",
+        "C"
+      ],
+      "modul": "Virtualisierung_15"
+    }
+  ]
+}

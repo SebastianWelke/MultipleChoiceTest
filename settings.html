@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Einstellungen – Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="settings">
+  <div class="settings-header">
+    <div>
+      <h1>Einstellungen</h1>
+      <div class="subtitle">Änderungen werden sofort gespeichert.</div>
+    </div>
+    <a class="btn btn-primary" style="text-decoration:none;" href="quiz.html">← Zurück zum Quiz</a>
+  </div>
+
+  <section class="card">
+    <h2>Hinweis zur Anzahl richtiger Antworten</h2>
+    <p class="desc">Legt fest, ob bei jeder Frage angezeigt wird, wie viele Antworten richtig sind.</p>
+    <label class="choice">
+      <input type="radio" name="answer-count" value="show">
+      <div>
+        <div class="choice-title">Anzahl anzeigen</div>
+        <div class="choice-desc">z. B. „2 Antworten sind richtig.“</div>
+      </div>
+    </label>
+    <label class="choice">
+      <input type="radio" name="answer-count" value="hide">
+      <div>
+        <div class="choice-title">Anzahl verbergen (Prüfungsmodus)</div>
+        <div class="choice-desc">Es wird kein Hinweis angezeigt — auch nicht, ob überhaupt eine Antwort richtig ist.</div>
+      </div>
+    </label>
+    <div id="settings-msg"></div>
+  </section>
+
+  <section class="card">
+    <h2>Fragenkatalog</h2>
+    <p class="desc">Wähle, mit welchem Fragenkatalog geübt wird. Statistik und Wiederholungs-Pool werden pro Katalog getrennt gespeichert.</p>
+    <div class="catalog-list" id="catalog-list"></div>
+    <div id="catalog-msg"></div>
+  </section>
+
+  <section class="card">
+    <h2>Fragenkatalog hochladen</h2>
+    <p class="desc">Lade eine JSON-Datei mit Fragen hoch, um z. B. für eine andere Prüfung zu üben.</p>
+    <form id="upload-form">
+      <div class="form-row">
+        <label for="upload-file">JSON-Datei</label>
+        <input type="file" id="upload-file" accept=".json,application/json" required>
+      </div>
+      <div class="form-row">
+        <label for="upload-name">Name des Katalogs</label>
+        <input type="text" id="upload-name" placeholder="z. B. CISSP" maxlength="80" required>
+      </div>
+      <label style="display:flex; align-items:center; gap:8px; font-size:14px; color:var(--fg-dim); margin-bottom:14px; cursor:pointer;">
+        <input type="checkbox" id="upload-activate" checked>
+        Nach dem Hochladen als aktiven Katalog verwenden
+      </label>
+      <button class="btn btn-primary" type="submit">Hochladen</button>
+    </form>
+    <div id="upload-msg"></div>
+
+    <details style="margin-top:20px;">
+      <summary>Erwartetes Dateiformat</summary>
+      <p class="desc" style="margin-top:12px;">
+        Ein Objekt mit <code>name</code> und <code>fragen</code> oder direkt eine Liste von Fragen.
+        Beliebig viele Antwortoptionen (mind. 2) sind möglich; <code>modul</code> ist optional und dient als Themenfilter.
+      </p>
+<pre class="example">[
+  {
+    "frage": "Welche Protokolle arbeiten auf Schicht 4?",
+    "optionen": {
+      "A": "TCP",
+      "B": "IP",
+      "C": "UDP",
+      "D": "HTTP"
+    },
+    "richtig": ["A", "C"],
+    "modul": "Netzwerke"
+  }
+]</pre>
+    </details>
+  </section>
+</div>
+
+<script>
+let settings = null;
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+async function api(method, url, body) {
+  const opts = { method, headers: {} };
+  if (body !== undefined) {
+    opts.headers['Content-Type'] = 'application/json';
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch(url, opts);
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
+}
+
+function showMsg(id, text, ok) {
+  const el = document.getElementById(id);
+  el.innerHTML = text ? `<div class="msg ${ok ? 'ok' : 'err'}">${escapeHtml(text)}</div>` : '';
+  if (ok && text) setTimeout(() => { if (el.textContent.includes(text)) el.innerHTML = ''; }, 3000);
+}
+
+async function saveSettings(patch, msgId) {
+  try {
+    settings = await api('PUT', '/api/settings', patch);
+    showMsg(msgId, 'Gespeichert.', true);
+  } catch (e) {
+    showMsg(msgId, e.message, false);
+  }
+}
+
+function renderAnswerCount() {
+  const value = settings.showAnswerCount ? 'show' : 'hide';
+  for (const radio of document.querySelectorAll('input[name="answer-count"]')) {
+    radio.checked = radio.value === value;
+  }
+}
+
+async function renderCatalogs() {
+  const list = document.getElementById('catalog-list');
+  let catalogs;
+  try {
+    catalogs = await api('GET', '/api/catalogs');
+  } catch (e) {
+    showMsg('catalog-msg', e.message, false);
+    return;
+  }
+  list.innerHTML = catalogs.map(c => `
+    <div class="catalog-row">
+      <label class="choice">
+        <input type="radio" name="catalog" value="${escapeHtml(c.id)}" ${c.id === settings.activeCatalog ? 'checked' : ''}>
+        <div>
+          <div class="choice-title">${escapeHtml(c.name)}${c.builtin ? ' <span class="choice-desc">(mitgeliefert)</span>' : ''}</div>
+          <div class="choice-desc">${c.anzahl} Fragen · ${c.module.length} ${c.module.length === 1 ? 'Modul' : 'Module'}</div>
+        </div>
+      </label>
+      ${c.builtin ? '' : `<button class="btn btn-danger" data-delete="${escapeHtml(c.id)}" data-name="${escapeHtml(c.name)}">Löschen</button>`}
+    </div>
+  `).join('');
+
+  for (const radio of list.querySelectorAll('input[name="catalog"]')) {
+    radio.addEventListener('change', () => saveSettings({ activeCatalog: radio.value }, 'catalog-msg'));
+  }
+  for (const btn of list.querySelectorAll('[data-delete]')) {
+    btn.addEventListener('click', async () => {
+      if (!confirm(`Fragenkatalog „${btn.dataset.name}“ wirklich löschen?`)) return;
+      try {
+        await api('DELETE', `/api/catalogs/${encodeURIComponent(btn.dataset.delete)}`);
+        localStorage.removeItem(`quiz_state_v2_${btn.dataset.delete}`);
+        settings = await api('GET', '/api/settings');
+        await renderCatalogs();
+        showMsg('catalog-msg', 'Katalog gelöscht.', true);
+      } catch (e) {
+        showMsg('catalog-msg', e.message, false);
+      }
+    });
+  }
+}
+
+// Upload
+let parsedUpload = null;
+
+document.getElementById('upload-file').addEventListener('change', async (e) => {
+  parsedUpload = null;
+  showMsg('upload-msg', '', true);
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    parsedUpload = JSON.parse(await file.text());
+  } catch (err) {
+    showMsg('upload-msg', `Die Datei ist kein gültiges JSON: ${err.message}`, false);
+    return;
+  }
+  const nameInput = document.getElementById('upload-name');
+  if (!nameInput.value) {
+    nameInput.value = (parsedUpload && typeof parsedUpload.name === 'string' && parsedUpload.name)
+      || file.name.replace(/\.json$/i, '').replace(/[_-]+/g, ' ');
+  }
+});
+
+document.getElementById('upload-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!parsedUpload) {
+    showMsg('upload-msg', 'Bitte eine gültige JSON-Datei auswählen.', false);
+    return;
+  }
+  const fragen = Array.isArray(parsedUpload) ? parsedUpload : parsedUpload.fragen;
+  const name = document.getElementById('upload-name').value.trim();
+  try {
+    const created = await api('POST', '/api/catalogs', { name, fragen });
+    if (document.getElementById('upload-activate').checked) {
+      settings = await api('PUT', '/api/settings', { activeCatalog: created.id });
+    }
+    showMsg('upload-msg', `„${created.name}“ mit ${created.anzahl} Fragen hochgeladen.`, true);
+    e.target.reset();
+    document.getElementById('upload-activate').checked = true;
+    parsedUpload = null;
+    await renderCatalogs();
+  } catch (err) {
+    showMsg('upload-msg', err.message, false);
+  }
+});
+
+async function boot() {
+  if (location.protocol === 'file:') {
+    document.querySelector('.settings').insertAdjacentHTML('afterbegin',
+      '<div class="msg err" style="margin-bottom:20px;">Bitte die App über <code>python3 server.py</code> starten und <code>http://localhost:8000/settings.html</code> öffnen.</div>');
+    return;
+  }
+  try {
+    settings = await api('GET', '/api/settings');
+  } catch (e) {
+    showMsg('settings-msg', e.message, false);
+    return;
+  }
+  renderAnswerCount();
+  for (const radio of document.querySelectorAll('input[name="answer-count"]')) {
+    radio.addEventListener('change', () => saveSettings({ showAnswerCount: radio.value === 'show' }, 'settings-msg'));
+  }
+  await renderCatalogs();
+}
+boot();
+</script>
+</body>
+</html>

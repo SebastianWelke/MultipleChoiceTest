@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz – Prüfungsvorbereitung</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <h1 id="catalog-title">Quiz</h1>
+    <div class="subtitle">Prüfungsvorbereitung</div>
+
+    <h2>Statistik</h2>
+    <div class="stat">
+      <span class="stat-label">Beantwortet</span>
+      <span class="stat-value accent" id="stat-answered">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Richtig</span>
+      <span class="stat-value ok" id="stat-correct">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Falsch</span>
+      <span class="stat-value err" id="stat-wrong">0</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Quote</span>
+      <span class="stat-value" id="stat-percent">–</span>
+    </div>
+    <div class="progress"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+
+    <div class="filter-section">
+      <h2>Modul</h2>
+      <select id="modul-filter">
+        <option value="__all__">Alle Module</option>
+      </select>
+    </div>
+
+    <div class="filter-section">
+      <h2>Falsche Fragen</h2>
+      <div class="stat">
+        <span class="stat-label">Im Wiederholungs-Pool</span>
+        <span class="stat-value warn" id="stat-retry">0</span>
+      </div>
+      <label style="display:flex; align-items:center; gap:8px; margin-top:10px; font-size:14px; color:var(--fg-dim); cursor:pointer;">
+        <input type="checkbox" id="retry-priority" checked>
+        Falsche bevorzugt wiederholen
+      </label>
+      <button class="btn btn-ghost" style="width:100%; margin-top:12px;" id="btn-reset">Statistik zurücksetzen</button>
+    </div>
+
+    <div class="filter-section">
+      <a class="btn btn-secondary" style="width:100%; text-align:center; text-decoration:none;" href="settings.html">⚙ Einstellungen</a>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="quiz-container"></div>
+  </main>
+</div>
+
+<script>
+const state = {
+  questions: [],
+  catalogId: null,
+  settings: { showAnswerCount: true },
+  current: null,
+  currentOrder: [],
+  selected: new Set(),
+  locked: false,
+  stats: { answered: 0, correct: 0, wrong: 0 },
+  // Map: questionIndex -> consecutive correct answers since last wrong.
+  // Entry is removed when streak reaches REQUIRED_CORRECT_TO_CLEAR.
+  wrongPool: new Map(),
+  recentlyAsked: [],
+  modulFilter: '__all__'
+};
+
+const REQUIRED_CORRECT_TO_CLEAR = 2;
+const RECENT_BUFFER_SIZE = 5;
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+// Optionale Zusatzangabe, die ein Katalog pro Frage mitbringen kann.
+const LEVEL_NAMES = { 1: 'Basis', 2: 'Experten', 3: 'Verständnis' };
+
+// Fortschritt wird pro Fragenkatalog gespeichert, da der Wiederholungs-Pool
+// Frage-Indizes enthält. Der TISP-Katalog behält den bisherigen Schlüssel.
+function storageKey() {
+  return state.catalogId === 'tisp' ? 'tisp_quiz_state_v2' : `quiz_state_v2_${state.catalogId}`;
+}
+
+function saveState() {
+  localStorage.setItem(storageKey(), JSON.stringify({
+    stats: state.stats,
+    wrongPool: [...state.wrongPool.entries()],
+    modulFilter: state.modulFilter
+  }));
+}
+function loadState() {
+  try {
+    const raw = localStorage.getItem(storageKey());
+    if (raw) {
+      const s = JSON.parse(raw);
+      if (s.stats) state.stats = s.stats;
+      if (Array.isArray(s.wrongPool)) state.wrongPool = new Map(s.wrongPool);
+      if (s.modulFilter) state.modulFilter = s.modulFilter;
+      return;
+    }
+    const oldRaw = state.catalogId === 'tisp' && localStorage.getItem('tisp_quiz_state_v1');
+    if (oldRaw) {
+      const s = JSON.parse(oldRaw);
+      if (s.stats) state.stats = s.stats;
+      if (Array.isArray(s.wrongPool)) state.wrongPool = new Map(s.wrongPool.map(i => [i, 0]));
+      if (s.modulFilter) state.modulFilter = s.modulFilter;
+    }
+  } catch (e) { console.warn(e); }
+}
+
+function rememberAsked(idx) {
+  state.recentlyAsked.push(idx);
+  if (state.recentlyAsked.length > RECENT_BUFFER_SIZE) state.recentlyAsked.shift();
+}
+function wasRecentlyAsked(idx) {
+  return state.recentlyAsked.includes(idx);
+}
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function indexOfQuestion(q) {
+  return state.questions.indexOf(q);
+}
+
+function pickRandomQuestion() {
+  const filterModul = state.modulFilter;
+  const pool = state.questions
+    .map((q, i) => ({ q, i }))
+    .filter(({ q }) => filterModul === '__all__' || q.modul === filterModul);
+  if (pool.length === 0) return null;
+
+  const fresh = pool.filter(({ i }) => !wasRecentlyAsked(i));
+  const candidates = fresh.length > 0 ? fresh : pool;
+
+  const retryPriority = document.getElementById('retry-priority').checked;
+  if (retryPriority && state.wrongPool.size > 0 && Math.random() < 0.4) {
+    const retry = candidates.filter(({ i }) => state.wrongPool.has(i));
+    if (retry.length > 0) {
+      return retry[Math.floor(Math.random() * retry.length)].q;
+    }
+  }
+  return candidates[Math.floor(Math.random() * candidates.length)].q;
+}
+
+function renderModulFilter() {
+  const sel = document.getElementById('modul-filter');
+  const moduls = [...new Set(state.questions.map(q => q.modul))].sort();
+  for (const m of moduls) {
+    const opt = document.createElement('option');
+    opt.value = m;
+    opt.textContent = m.replace(/_/g, ' ');
+    sel.appendChild(opt);
+  }
+  if (!moduls.includes(state.modulFilter)) state.modulFilter = '__all__';
+  sel.value = state.modulFilter;
+  sel.addEventListener('change', () => {
+    state.modulFilter = sel.value;
+    saveState();
+    nextQuestion();
+  });
+}
+
+function renderStats() {
+  document.getElementById('stat-answered').textContent = state.stats.answered;
+  document.getElementById('stat-correct').textContent = state.stats.correct;
+  document.getElementById('stat-wrong').textContent = state.stats.wrong;
+  document.getElementById('stat-retry').textContent = state.wrongPool.size;
+  const pct = state.stats.answered === 0 ? 0 : Math.round((state.stats.correct / state.stats.answered) * 100);
+  document.getElementById('stat-percent').textContent = state.stats.answered === 0 ? '–' : pct + '%';
+  document.getElementById('progress-bar').style.width = pct + '%';
+}
+
+function renderQuestion() {
+  const q = state.current;
+  const container = document.getElementById('quiz-container');
+  if (!q) {
+    container.innerHTML = '<div class="empty-state">Keine Fragen für dieses Modul.</div>';
+    return;
+  }
+  // Im Prüfungsmodus steht hier nichts: schon die Aussage "eine oder mehrere"
+  // wäre falsch, denn in manchen Katalogen ist keine Antwort richtig.
+  const nRichtig = q.richtig.length;
+  const hinweis = state.settings.showAnswerCount
+    ? `<div class="hint">${nRichtig === 1 ? '1 Antwort ist richtig.' : `${nRichtig} Antworten sind richtig.`}</div>`
+    : '';
+  const levelBadge = LEVEL_NAMES[q.level]
+    ? `<span class="modul-badge">Level ${q.level} · ${LEVEL_NAMES[q.level]}</span>`
+    : '';
+  let html = `
+    <span class="modul-badge">${escapeHtml(q.modul.replace(/_/g, ' '))}</span>${levelBadge}
+    <p class="frage${hinweis ? '' : ' frage-ohne-hinweis'}">${escapeHtml(q.frage)}</p>
+    ${hinweis}
+    <div class="options" id="options">
+  `;
+  state.currentOrder = shuffle(Object.keys(q.optionen));
+  state.currentOrder.forEach((origLetter, idx) => {
+    const text = q.optionen[origLetter];
+    const display = LETTERS[idx];
+    html += `
+      <div class="option" data-letter="${escapeHtml(origLetter)}" data-display="${display}">
+        <div class="opt-letter">${display}</div>
+        <div class="opt-text">${escapeHtml(text)}</div>
+        <div class="opt-icon"></div>
+      </div>
+    `;
+  });
+  html += `
+    </div>
+    <div id="feedback-area"></div>
+    <div class="actions" id="actions">
+      <button class="btn btn-primary" id="btn-submit">Antwort prüfen</button>
+      <button class="btn btn-ghost" id="btn-skip">Überspringen</button>
+    </div>
+  `;
+  container.innerHTML = html;
+
+  for (const optEl of container.querySelectorAll('.option')) {
+    optEl.addEventListener('click', () => toggleOption(optEl));
+  }
+  document.getElementById('btn-submit').addEventListener('click', submitAnswer);
+  document.getElementById('btn-skip').addEventListener('click', nextQuestion);
+}
+
+function toggleOption(el) {
+  if (state.locked) return;
+  const letter = el.dataset.letter;
+  if (state.selected.has(letter)) {
+    state.selected.delete(letter);
+    el.classList.remove('selected');
+  } else {
+    state.selected.add(letter);
+    el.classList.add('selected');
+  }
+}
+
+function submitAnswer() {
+  if (state.locked) return;
+  // Ohne Auswahl zu prüfen ist erlaubt: bei manchen Fragen ist keine Antwort richtig.
+  state.locked = true;
+  const q = state.current;
+  const richtigSet = new Set(q.richtig);
+  const selectedArr = [...state.selected];
+  const correctlySelected = selectedArr.filter(l => richtigSet.has(l));
+  const wronglySelected = selectedArr.filter(l => !richtigSet.has(l));
+  const missed = q.richtig.filter(l => !state.selected.has(l));
+  const isCorrect = wronglySelected.length === 0 && missed.length === 0;
+
+  // Reveal styling
+  const optEls = document.querySelectorAll('.option');
+  optEls.forEach(el => {
+    const letter = el.dataset.letter;
+    const wasSelected = state.selected.has(letter);
+    const isRight = richtigSet.has(letter);
+    el.classList.add('locked');
+    const icon = el.querySelector('.opt-icon');
+    if (isRight && wasSelected) {
+      el.classList.add('reveal-correct');
+      icon.textContent = '✓';
+      icon.style.color = 'var(--ok)';
+    } else if (!isRight && wasSelected) {
+      el.classList.add('reveal-wrong');
+      icon.textContent = '✗';
+      icon.style.color = 'var(--err)';
+    } else if (isRight && !wasSelected) {
+      el.classList.add('reveal-missed');
+      icon.textContent = '!';
+      icon.style.color = 'var(--warn)';
+    }
+  });
+
+  // Stats
+  state.stats.answered++;
+  const qIdx = indexOfQuestion(q);
+  let poolHint = '';
+  if (isCorrect) {
+    state.stats.correct++;
+    if (state.wrongPool.has(qIdx)) {
+      const streak = state.wrongPool.get(qIdx) + 1;
+      if (streak >= REQUIRED_CORRECT_TO_CLEAR) {
+        state.wrongPool.delete(qIdx);
+        poolHint = `Diese Frage wurde ${REQUIRED_CORRECT_TO_CLEAR}× in Folge richtig beantwortet und ist aus dem Wiederholungs-Pool entfernt.`;
+      } else {
+        state.wrongPool.set(qIdx, streak);
+        poolHint = `Noch ${REQUIRED_CORRECT_TO_CLEAR - streak}× richtig beantworten, um aus dem Wiederholungs-Pool zu kommen.`;
+      }
+    }
+  } else {
+    state.stats.wrong++;
+    state.wrongPool.set(qIdx, 0);
+    poolHint = `Die Frage ist im Wiederholungs-Pool und wird gelegentlich wieder eingestreut (${REQUIRED_CORRECT_TO_CLEAR}× richtig nötig zum Verlassen).`;
+  }
+  renderStats();
+  saveState();
+
+  // Feedback (use display letter, not original)
+  const origToDisplay = {};
+  state.currentOrder.forEach((orig, idx) => { origToDisplay[orig] = LETTERS[idx]; });
+  const fmt = l => `<strong>${origToDisplay[l] || l}</strong>: ${escapeHtml(q.optionen[l])}`;
+  const sortByDisplay = arr => arr.slice().sort((a, b) => (origToDisplay[a] || '').localeCompare(origToDisplay[b] || ''));
+  const fb = document.getElementById('feedback-area');
+  // Bei manchen Fragen ist keine der Antworten richtig.
+  const keineRichtig = q.richtig.length === 0;
+  const richtigeTexte = keineRichtig
+    ? 'Keine der Antworten ist richtig.'
+    : sortByDisplay(q.richtig).map(fmt).join('<br>');
+  const hintHtml = poolHint ? `<p style="margin-top:10px; color:var(--fg-dim); font-size:13px;">${poolHint}</p>` : '';
+
+  // Build Claude link (works for both correct and wrong answers)
+  const modulClean = q.modul.replace(/_\d+$/, '').replace(/_/g, ' ');
+  const optionsList = state.currentOrder.map((orig, idx) => `${LETTERS[idx]}: ${q.optionen[orig]}`).join('\n');
+  const richtigDisplay = keineRichtig
+    ? 'keine der Antworten'
+    : q.richtig.map(l => origToDisplay[l]).sort().join(', ');
+  let claudePrompt;
+  if (isCorrect) {
+    claudePrompt =
+      `Ich habe folgende Frage im Kontext von ${modulClean} richtig beantwortet, möchte das Konzept aber besser verstehen.\n\n` +
+      `Frage: ${q.frage}\n\n` +
+      `Antwortoptionen:\n${optionsList}\n\n` +
+      `Richtig: ${richtigDisplay}\n\n` +
+      `Bitte erkläre mir die Hintergründe, warum genau diese Antwort(en) korrekt sind und warum die anderen Optionen nicht zutreffen.`;
+  } else {
+    claudePrompt =
+      `Erkläre mir im Kontext von ${modulClean} folgende Frage und warum die richtigen Antworten korrekt sind.\n\n` +
+      `Frage: ${q.frage}\n\n` +
+      `Antwortoptionen:\n${optionsList}\n\n` +
+      `Richtig: ${richtigDisplay}\n\n` +
+      `Bitte erläutere das Konzept dahinter, sodass ich es für die Prüfung verstehe.`;
+  }
+  const claudeUrl = 'https://claude.ai/new?q=' + encodeURIComponent(claudePrompt);
+  const claudeLabel = isCorrect ? '💡 Tiefer ins Thema mit Claude →' : '💡 Konzept von Claude erklären lassen →';
+  // Manche Kataloge liefern einen Verweis auf die Originalquelle mit.
+  const sourceUrl = /^https?:\/\//.test(q.quelle || '') ? q.quelle : null;
+  const sourceLink = sourceUrl
+    ? `<a class="source-link" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener">📖 Quelle nachlesen →</a>`
+    : '';
+  const claudeLink = `
+    <p class="feedback-links">
+      <a class="claude-link" href="${claudeUrl}" target="_blank" rel="noopener">${claudeLabel}</a>
+      ${sourceLink}
+    </p>`;
+
+  if (isCorrect) {
+    fb.innerHTML = `
+      <div class="feedback ok">
+        <h3>✓ Richtig!</h3>
+        <p>${richtigeTexte}</p>
+        ${claudeLink}
+        ${hintHtml}
+      </div>`;
+  } else {
+    let parts = `<div class="feedback err"><h3>✗ Nicht ganz</h3>`;
+    parts += keineRichtig
+      ? `<p><strong class="ok">${richtigeTexte}</strong><br>Hier war es richtig, nichts auszuwählen.</p>`
+      : `<p><strong class="ok">Richtige Antwort${q.richtig.length>1?'en':''}:</strong><br>${richtigeTexte}</p>`;
+    if (wronglySelected.length) {
+      const txt = sortByDisplay(wronglySelected).map(fmt).join('<br>');
+      parts += `<p><strong class="err">Falsch ausgewählt:</strong><br>${txt}</p>`;
+    }
+    if (missed.length) {
+      const txt = sortByDisplay(missed).map(fmt).join('<br>');
+      parts += `<p><strong class="warn">Übersehen:</strong><br>${txt}</p>`;
+    }
+    parts += claudeLink;
+    parts += hintHtml;
+    parts += `</div>`;
+    fb.innerHTML = parts;
+  }
+
+  document.getElementById('actions').innerHTML = `
+    <button class="btn btn-primary" id="btn-next">Nächste Frage →</button>
+  `;
+  document.getElementById('btn-next').addEventListener('click', nextQuestion);
+  document.getElementById('btn-next').focus();
+}
+
+function nextQuestion() {
+  state.selected.clear();
+  state.locked = false;
+  state.current = pickRandomQuestion();
+  if (state.current) rememberAsked(indexOfQuestion(state.current));
+  renderQuestion();
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function resetStats() {
+  if (!confirm('Statistik und Wiederholungs-Pool wirklich zurücksetzen?')) return;
+  state.stats = { answered: 0, correct: 0, wrong: 0 };
+  state.wrongPool = new Map();
+  state.recentlyAsked = [];
+  saveState();
+  renderStats();
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  const key = e.key.toUpperCase();
+  if (key.length === 1 && LETTERS.slice(0, state.currentOrder.length).includes(key) && !state.locked) {
+    const el = document.querySelector(`.option[data-display="${key}"]`);
+    if (el) toggleOption(el);
+    e.preventDefault();
+  } else if (e.key === 'Enter') {
+    if (state.locked) nextQuestion();
+    else submitAnswer();
+    e.preventDefault();
+  }
+});
+
+async function fetchJson(url) {
+  const res = await fetch(url);
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
+}
+
+function showLoadError(message) {
+  document.getElementById('quiz-container').innerHTML = `
+    <div class="empty-state">
+      <p><strong>Die Fragen konnten nicht geladen werden.</strong></p>
+      <p>${escapeHtml(message)}</p>
+      <p>Starte die App über den Python-Server:<br>
+      <code>python3 server.py</code><br>und öffne dann <code>http://localhost:8000/quiz.html</code>.</p>
+    </div>`;
+}
+
+// Boot
+async function boot() {
+  if (location.protocol === 'file:') {
+    showLoadError('Die Seite wurde direkt als Datei geöffnet.');
+    return;
+  }
+  try {
+    state.settings = await fetchJson('/api/settings');
+    const catalog = await fetchJson(`/api/catalogs/${encodeURIComponent(state.settings.activeCatalog)}`);
+    state.catalogId = catalog.id;
+    state.questions = catalog.fragen;
+    document.getElementById('catalog-title').textContent = `${catalog.name} Quiz`;
+    document.title = `${catalog.name} Quiz – Prüfungsvorbereitung`;
+  } catch (e) {
+    showLoadError(e.message);
+    return;
+  }
+  loadState();
+  renderModulFilter();
+  renderStats();
+  document.getElementById('btn-reset').addEventListener('click', resetStats);
+  nextQuestion();
+}
+boot();
+</script>
+</body>
+</html>
