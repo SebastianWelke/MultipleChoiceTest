@@ -254,6 +254,9 @@ def delete_catalog(catalog_id):
 # ---------- HTTP ----------
 
 class QuizHandler(SimpleHTTPRequestHandler):
+    # Verhindert, dass eine haengende Verbindung dauerhaft einen Thread belegt.
+    timeout = 10
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=BASE_DIR, **kwargs)
 
@@ -326,7 +329,14 @@ class QuizHandler(SimpleHTTPRequestHandler):
         if ctype != "application/json":
             raise ApiError(HTTPStatus.UNSUPPORTED_MEDIA_TYPE,
                            "Content-Type muss application/json sein.")
-        length = int(self.headers.get("Content-Length") or 0)
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except ValueError:
+            length = -1
+        # Eine negative Laenge wuerde rfile.read(-1) bis zum Verbindungsende
+        # lesen und damit das Limit unbemerkt aushebeln.
+        if length < 0:
+            raise ApiError(HTTPStatus.BAD_REQUEST, "Ungültiger Content-Length-Header.")
         if length > MAX_UPLOAD_BYTES:
             raise ApiError(HTTPStatus.REQUEST_ENTITY_TOO_LARGE, "Datei ist zu groß (max. 20 MB).")
         raw = self.rfile.read(length)
@@ -348,28 +358,42 @@ class QuizHandler(SimpleHTTPRequestHandler):
         if not self._check_host() or not self._check_origin():
             return
         path = self.path.split("?", 1)[0].rstrip("/")
+        needs_body = ((method == "PUT" and path == "/api/settings")
+                      or (method == "POST" and path == "/api/catalogs"))
         try:
-            with _lock:
-                if path == "/api/settings" and method == "GET":
-                    return self._send_json(HTTPStatus.OK, load_settings())
-                if path == "/api/settings" and method == "PUT":
-                    return self._send_json(HTTPStatus.OK, save_settings(self._read_body()))
-                if path == "/api/catalogs" and method == "GET":
-                    return self._send_json(HTTPStatus.OK, list_catalogs())
-                if path == "/api/catalogs" and method == "POST":
-                    return self._send_json(HTTPStatus.CREATED, create_catalog(self._read_body()))
-                if path.startswith("/api/catalogs/"):
-                    catalog_id = path[len("/api/catalogs/"):]
-                    if method == "GET":
-                        return self._send_json(HTTPStatus.OK, load_catalog(catalog_id))
-                    if method == "DELETE":
-                        delete_catalog(catalog_id)
-                        return self._send_json(HTTPStatus.OK, {"ok": True})
-            raise ApiError(HTTPStatus.NOT_FOUND, "Unbekannter API-Endpunkt.")
+            # Body lesen und Antwort schreiben haengen am Tempo des Clients und
+            # gehoeren daher nicht unter den prozessweiten Lock: ein einziger
+            # langsamer Client wuerde dort sonst den ganzen Server anhalten.
+            body = self._read_body() if needs_body else None
+            status, data = self._dispatch(method, path, body)
         except ApiError as e:
-            self._send_json(e.status, {"error": e.message})
+            return self._send_json(e.status, {"error": e.message})
         except (OSError, ValueError) as e:
-            self._send_json(HTTPStatus.INTERNAL_SERVER_ERROR, {"error": "Serverfehler: %s" % e})
+            return self._send_json(HTTPStatus.INTERNAL_SERVER_ERROR,
+                                   {"error": "Serverfehler: %s" % e})
+        self._send_json(status, data)
+
+    def _dispatch(self, method, path, body):
+        """Fuehrt die Anfrage aus. Nur hier wird auf Dateien zugegriffen."""
+        with _lock:
+            if path == "/api/settings":
+                if method == "GET":
+                    return HTTPStatus.OK, load_settings()
+                if method == "PUT":
+                    return HTTPStatus.OK, save_settings(body)
+            elif path == "/api/catalogs":
+                if method == "GET":
+                    return HTTPStatus.OK, list_catalogs()
+                if method == "POST":
+                    return HTTPStatus.CREATED, create_catalog(body)
+            elif path.startswith("/api/catalogs/"):
+                catalog_id = path[len("/api/catalogs/"):]
+                if method == "GET":
+                    return HTTPStatus.OK, load_catalog(catalog_id)
+                if method == "DELETE":
+                    delete_catalog(catalog_id)
+                    return HTTPStatus.OK, {"ok": True}
+        raise ApiError(HTTPStatus.NOT_FOUND, "Unbekannter API-Endpunkt.")
 
 
 def main():
