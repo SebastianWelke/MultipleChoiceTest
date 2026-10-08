@@ -312,6 +312,7 @@ code {
 .choice input { margin-top: 4px; accent-color: var(--accent); }
 .choice-title { font-weight: 600; }
 .choice-desc { color: var(--fg-dim); font-size: 13px; }
+.choice-desc.err { color: var(--err); }
 .catalog-row {
   display: flex;
   align-items: center;

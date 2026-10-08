@@ -310,7 +310,9 @@ function submitAnswer() {
   // Feedback (use display letter, not original)
   const origToDisplay = {};
   state.currentOrder.forEach((orig, idx) => { origToDisplay[orig] = LETTERS[idx]; });
-  const fmt = l => `<strong>${origToDisplay[l] || l}</strong>: ${escapeHtml(q.optionen[l])}`;
+  // origToDisplay[l] ist ein Buchstabe aus LETTERS; der Fallback ist ein
+  // Optionsschlüssel aus der Katalogdatei und wird daher maskiert.
+  const fmt = l => `<strong>${escapeHtml(origToDisplay[l] || l)}</strong>: ${escapeHtml(q.optionen[l])}`;
   const sortByDisplay = arr => arr.slice().sort((a, b) => (origToDisplay[a] || '').localeCompare(origToDisplay[b] || ''));
   const fb = document.getElementById('feedback-area');
   // Bei manchen Fragen ist keine der Antworten richtig.

@@ -130,11 +130,21 @@ def load_catalog(catalog_id):
         raise ApiError(HTTPStatus.NOT_FOUND, "Fragenkatalog nicht gefunden.")
     data = read_json(path)
     # Üblich ist {"name": ..., "fragen": [...]}; eine nackte Liste von Fragen
-    # wird ebenfalls gelesen, dann dient die Dateiname als Katalogname.
+    # wird ebenfalls gelesen, dann dient der Dateiname als Katalogname.
     if isinstance(data, list):
         name, fragen = catalog_id, data
-    else:
+    elif isinstance(data, dict):
         name, fragen = data.get("name", catalog_id), data.get("fragen", [])
+    else:
+        raise ApiError(HTTPStatus.BAD_REQUEST,
+                       "Die Datei muss ein Objekt oder eine Liste von Fragen enthalten.")
+    if not isinstance(name, str) or not name.strip():
+        name = catalog_id
+    name = name.strip()[:80]
+    # Auch direkt in kataloge/ abgelegte Dateien werden geprüft, nicht nur
+    # Uploads: das Frontend verlässt sich darauf, dass jede Frage die
+    # erwarteten Felder in der erwarteten Form mitbringt.
+    fragen = validate_questions(fragen, default_modul=name.replace(" ", "_"))
     return {"id": catalog_id, "name": name, "builtin": catalog_id in PROTECTED_IDS,
             "fragen": fragen}
 
@@ -148,7 +158,15 @@ def list_catalogs():
     for cid in ids:
         try:
             cat = load_catalog(cid)
-        except (OSError, ValueError, ApiError):
+        except (OSError, ValueError, ApiError) as e:
+            # Ein defekter Katalog wird weiterhin aufgeführt. Würde er hier
+            # verschwinden, wäre er über die Oberfläche weder zu sehen noch
+            # zu löschen.
+            result.append({
+                "id": cid, "name": cid, "builtin": cid in PROTECTED_IDS,
+                "anzahl": 0, "module": [],
+                "fehler": e.message if isinstance(e, ApiError) else "Datei ist nicht lesbar.",
+            })
             continue
         result.append({
             "id": cat["id"],

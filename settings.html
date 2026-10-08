@@ -136,18 +136,26 @@ async function renderCatalogs() {
     showMsg('catalog-msg', e.message, false);
     return;
   }
-  list.innerHTML = catalogs.map(c => `
+  // Ein Katalog, den der Server nicht lesen kann, wird aufgeführt, aber nicht
+  // zur Auswahl angeboten -- sonst liesse er sich nicht mehr löschen.
+  list.innerHTML = catalogs.map(c => {
+    const defekt = typeof c.fehler === 'string';
+    const info = defekt
+      ? `<div class="choice-desc err">Nicht lesbar: ${escapeHtml(c.fehler)}</div>`
+      : `<div class="choice-desc">${c.anzahl} Fragen · ${c.module.length} ${c.module.length === 1 ? 'Modul' : 'Module'}</div>`;
+    return `
     <div class="catalog-row">
       <label class="choice">
-        <input type="radio" name="catalog" value="${escapeHtml(c.id)}" ${c.id === settings.activeCatalog ? 'checked' : ''}>
+        <input type="radio" name="catalog" value="${escapeHtml(c.id)}" ${defekt ? 'disabled' : ''} ${!defekt && c.id === settings.activeCatalog ? 'checked' : ''}>
         <div>
           <div class="choice-title">${escapeHtml(c.name)}${c.builtin ? ' <span class="choice-desc">(mitgeliefert)</span>' : ''}</div>
-          <div class="choice-desc">${c.anzahl} Fragen · ${c.module.length} ${c.module.length === 1 ? 'Modul' : 'Module'}</div>
+          ${info}
         </div>
       </label>
       ${c.builtin ? '' : `<button class="btn btn-danger" data-delete="${escapeHtml(c.id)}" data-name="${escapeHtml(c.name)}">Löschen</button>`}
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   for (const radio of list.querySelectorAll('input[name="catalog"]')) {
     radio.addEventListener('change', () => saveSettings({ activeCatalog: radio.value }, 'catalog-msg'));
