@@ -17,6 +17,8 @@ import argparse
 import json
 import os
 import re
+import socket
+import sys
 import threading
 import webbrowser
 from http import HTTPStatus
@@ -36,6 +38,7 @@ DEFAULT_SETTINGS = {
 }
 
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
+MAX_CATALOGS = 50
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 
 # Nur diese Dateien werden statisch ausgeliefert. Alles andere im
@@ -47,6 +50,11 @@ ALLOWED_HOSTS = set()
 ALLOWED_ORIGINS = set()
 
 _lock = threading.Lock()
+
+# Metadaten je Katalog, damit GET /api/catalogs nicht bei jedem Aufruf alle
+# Dateien neu einliest und prüft. Schlüssel ist der Dateizustand, eine Änderung
+# von aussen fällt also auf. Zugriff nur unter _lock.
+_summary_cache = {}
 
 
 def configure_allowed_origins(port):
@@ -149,33 +157,45 @@ def load_catalog(catalog_id):
             "fragen": fragen}
 
 
+def catalog_ids():
+    if not os.path.isdir(CATALOG_DIR):
+        return []
+    return sorted(f[:-5] for f in os.listdir(CATALOG_DIR)
+                  if f.endswith(".json") and ID_PATTERN.match(f[:-5]))
+
+
+def catalog_summary(catalog_id):
+    """Metadaten eines Katalogs, solange möglich aus dem Cache."""
+    try:
+        st = os.stat(os.path.join(CATALOG_DIR, catalog_id + ".json"))
+        stamp = (st.st_mtime_ns, st.st_size)
+    except OSError:
+        stamp = None
+    cached = _summary_cache.get(catalog_id)
+    if cached is not None and stamp is not None and cached[0] == stamp:
+        return cached[1]
+    try:
+        cat = load_catalog(catalog_id)
+        entry = {"id": cat["id"], "name": cat["name"], "builtin": cat["builtin"],
+                 "anzahl": len(cat["fragen"]),
+                 "module": sorted({q["modul"] for q in cat["fragen"]})}
+    except (OSError, ValueError, ApiError) as e:
+        # Ein defekter Katalog wird weiterhin aufgeführt. Würde er hier
+        # verschwinden, wäre er über die Oberfläche weder zu sehen noch
+        # zu löschen.
+        entry = {"id": catalog_id, "name": catalog_id,
+                 "builtin": catalog_id in PROTECTED_IDS, "anzahl": 0, "module": [],
+                 "fehler": e.message if isinstance(e, ApiError) else "Datei ist nicht lesbar."}
+    if stamp is not None:
+        _summary_cache[catalog_id] = (stamp, entry)
+    return entry
+
+
 def list_catalogs():
-    ids = []
-    if os.path.isdir(CATALOG_DIR):
-        ids = sorted(f[:-5] for f in os.listdir(CATALOG_DIR)
-                     if f.endswith(".json") and ID_PATTERN.match(f[:-5]))
-    result = []
-    for cid in ids:
-        try:
-            cat = load_catalog(cid)
-        except (OSError, ValueError, ApiError) as e:
-            # Ein defekter Katalog wird weiterhin aufgeführt. Würde er hier
-            # verschwinden, wäre er über die Oberfläche weder zu sehen noch
-            # zu löschen.
-            result.append({
-                "id": cid, "name": cid, "builtin": cid in PROTECTED_IDS,
-                "anzahl": 0, "module": [],
-                "fehler": e.message if isinstance(e, ApiError) else "Datei ist nicht lesbar.",
-            })
-            continue
-        result.append({
-            "id": cat["id"],
-            "name": cat["name"],
-            "builtin": cat["builtin"],
-            "anzahl": len(cat["fragen"]),
-            "module": sorted({q.get("modul", "") for q in cat["fragen"]}),
-        })
-    return result
+    ids = catalog_ids()
+    for verschwunden in set(_summary_cache) - set(ids):
+        del _summary_cache[verschwunden]
+    return [catalog_summary(cid) for cid in ids]
 
 
 def slugify(name):
@@ -248,6 +268,11 @@ def create_catalog(payload):
         raise ApiError(HTTPStatus.BAD_REQUEST, "Bitte einen Namen für den Fragenkatalog angeben.")
     name = name.strip()[:80]
     fragen = validate_questions(payload.get("fragen"), default_modul=name.replace(" ", "_"))
+
+    if len(catalog_ids()) >= MAX_CATALOGS:
+        raise ApiError(HTTPStatus.BAD_REQUEST,
+                       "Es sind höchstens %d Fragenkataloge möglich. "
+                       "Bitte zuerst einen nicht mehr benötigten löschen." % MAX_CATALOGS)
 
     base = slugify(name)
     os.makedirs(CATALOG_DIR, exist_ok=True)
@@ -387,8 +412,14 @@ class QuizHandler(SimpleHTTPRequestHandler):
         except ApiError as e:
             return self._send_json(e.status, {"error": e.message})
         except (OSError, ValueError) as e:
-            return self._send_json(HTTPStatus.INTERNAL_SERVER_ERROR,
-                                   {"error": "Serverfehler: %s" % e})
+            # Nicht an den Client: OSError-Texte enthalten vollständige
+            # Dateisystempfade, ValueError die Fundstelle im JSON.
+            # log_error und nicht print: landet auf stderr neben dem
+            # Zugriffs-Log, statt in einem gepufferten stdout zu versanden.
+            self.log_error("Fehler bei %s %s: %r", method, path, e)
+            return self._send_json(
+                HTTPStatus.INTERNAL_SERVER_ERROR,
+                {"error": "Interner Serverfehler. Details stehen in der Server-Konsole."})
         self._send_json(status, data)
 
     def _dispatch(self, method, path, body):
@@ -414,6 +445,18 @@ class QuizHandler(SimpleHTTPRequestHandler):
         raise ApiError(HTTPStatus.NOT_FOUND, "Unbekannter API-Endpunkt.")
 
 
+class QuizServer(ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        """Ein Client, der die Verbindung abbricht, ist kein Serverfehler.
+
+        Beim Neuladen oder Schliessen des Tabs ist das der Normalfall. Ein
+        Traceback dafür macht die Konsole nur unbrauchbar für echte Fehler.
+        """
+        if isinstance(sys.exc_info()[1], (ConnectionError, socket.timeout)):
+            return
+        super().handle_error(request, client_address)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Startet den Quiz-Webserver.")
     parser.add_argument("--port", type=int, default=8000)
@@ -421,7 +464,7 @@ def main():
     args = parser.parse_args()
 
     configure_allowed_origins(args.port)
-    server = ThreadingHTTPServer(("127.0.0.1", args.port), QuizHandler)
+    server = QuizServer(("127.0.0.1", args.port), QuizHandler)
     url = "http://localhost:%d/quiz.html" % args.port
     print("Quiz läuft unter %s  (Beenden mit Strg+C)" % url)
     if not args.no_browser:
