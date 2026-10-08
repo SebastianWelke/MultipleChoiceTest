@@ -38,7 +38,26 @@ DEFAULT_SETTINGS = {
 MAX_UPLOAD_BYTES = 20 * 1024 * 1024
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 
+# Nur diese Dateien werden statisch ausgeliefert. Alles andere im
+# Projektverzeichnis -- .git, Footage, settings.json -- bleibt unerreichbar.
+STATIC_FILES = {"/quiz.html", "/settings.html", "/style.css"}
+
+# Gegen DNS-Rebinding und CSRF; wird in main() aus dem Port gefuellt.
+ALLOWED_HOSTS = set()
+ALLOWED_ORIGINS = set()
+
 _lock = threading.Lock()
+
+
+def configure_allowed_origins(port):
+    """Legt fest, welche Host- und Origin-Header als lokal gelten."""
+    hosts = {"localhost:%d" % port, "127.0.0.1:%d" % port, "[::1]:%d" % port}
+    if port == 80:
+        hosts |= {"localhost", "127.0.0.1", "[::1]"}
+    ALLOWED_HOSTS.clear()
+    ALLOWED_HOSTS.update(hosts)
+    ALLOWED_ORIGINS.clear()
+    ALLOWED_ORIGINS.update("http://" + h for h in hosts)
 
 
 class ApiError(Exception):
@@ -243,16 +262,53 @@ class QuizHandler(SimpleHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
+    def _static_path(self):
+        """Der angefragte Pfad, falls er auf der Allowlist steht, sonst None."""
+        path = self.path.split("?", 1)[0].split("#", 1)[0]
+        return path if path in STATIC_FILES else None
+
+    def _check_host(self):
+        """Gegen DNS-Rebinding: nur die lokalen Namen duerfen uns ansprechen."""
+        if (self.headers.get("Host") or "").lower() in ALLOWED_HOSTS:
+            return True
+        self._send_json(HTTPStatus.BAD_REQUEST, {"error": "Ungueltiger Host-Header."})
+        return False
+
+    def _check_origin(self):
+        """Gegen CSRF: eine fremde Seite darf die API nicht ansprechen.
+
+        Ein fehlender Origin ist erlaubt -- Browser senden ihn bei direkter
+        Navigation nicht, und Werkzeuge wie curl kennen ihn gar nicht.
+        """
+        origin = self.headers.get("Origin")
+        if origin is None or origin.lower() in ALLOWED_ORIGINS:
+            return True
+        self._send_json(HTTPStatus.FORBIDDEN, {"error": "Anfrage von fremder Herkunft abgelehnt."})
+        return False
+
     def do_GET(self):
+        if self.path.startswith("/api/"):
+            self._api("GET")
+            return
+        if not self._check_host():
+            return
         if self.path in ("/", "/index.html"):
             self.send_response(HTTPStatus.FOUND)
             self.send_header("Location", "/quiz.html")
             self.end_headers()
             return
-        if self.path.startswith("/api/"):
-            self._api("GET")
-        else:
-            super().do_GET()
+        if self._static_path() is None:
+            self._send_json(HTTPStatus.NOT_FOUND, {"error": "Nicht gefunden."})
+            return
+        super().do_GET()
+
+    def do_HEAD(self):
+        if not self._check_host():
+            return
+        if self._static_path() is None:
+            self._send_json(HTTPStatus.NOT_FOUND, {"error": "Nicht gefunden."})
+            return
+        super().do_HEAD()
 
     def do_POST(self):
         self._api("POST")
@@ -264,6 +320,12 @@ class QuizHandler(SimpleHTTPRequestHandler):
         self._api("DELETE")
 
     def _read_body(self):
+        # Ohne diese Pruefung waere ein Upload per text/plain ein CORS-"Simple
+        # Request": ohne Preflight und damit von jeder fremden Seite ausloesbar.
+        ctype = (self.headers.get("Content-Type") or "").split(";", 1)[0].strip().lower()
+        if ctype != "application/json":
+            raise ApiError(HTTPStatus.UNSUPPORTED_MEDIA_TYPE,
+                           "Content-Type muss application/json sein.")
         length = int(self.headers.get("Content-Length") or 0)
         if length > MAX_UPLOAD_BYTES:
             raise ApiError(HTTPStatus.REQUEST_ENTITY_TOO_LARGE, "Datei ist zu groß (max. 20 MB).")
@@ -279,9 +341,12 @@ class QuizHandler(SimpleHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
-        self.wfile.write(body)
+        if self.command != "HEAD":
+            self.wfile.write(body)
 
     def _api(self, method):
+        if not self._check_host() or not self._check_origin():
+            return
         path = self.path.split("?", 1)[0].rstrip("/")
         try:
             with _lock:
@@ -313,6 +378,7 @@ def main():
     parser.add_argument("--no-browser", action="store_true", help="Browser nicht automatisch öffnen")
     args = parser.parse_args()
 
+    configure_allowed_origins(args.port)
     server = ThreadingHTTPServer(("127.0.0.1", args.port), QuizHandler)
     url = "http://localhost:%d/quiz.html" % args.port
     print("Quiz läuft unter %s  (Beenden mit Strg+C)" % url)
