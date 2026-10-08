@@ -106,7 +106,11 @@ oder direkt eine Liste von Fragen:
 
 Der Server prüft die Datei beim Hochladen und meldet Fehler mit Fundstelle, etwa
 „Frage 12: 'richtig' enthält unbekannte Option(en): E". Angenommene Kataloge landen
-als `kataloge/<name>.json`. Maximale Dateigröße: 20 MB.
+als `kataloge/<name>.json`. Maximale Dateigröße: 20 MB, höchstens 50 Kataloge.
+
+Dieselbe Prüfung greift auch für Dateien, die direkt in `kataloge/` abgelegt werden.
+Ein Katalog, der sie nicht besteht, erscheint in den Einstellungen mit seiner
+Fehlermeldung und lässt sich dort löschen, ist aber nicht auswählbar.
 
 Ein Modulname wird in der Anzeige mit Leerzeichen statt Unterstrichen dargestellt.
 Eine führende Nummer (`01_…`) sorgt dafür, dass die Module im Filter in der
@@ -123,6 +127,10 @@ richtigen Reihenfolge stehen.
 | `POST` | `/api/catalogs` | Katalog hochladen (`{"name": …, "fragen": […]}`) |
 | `DELETE` | `/api/catalogs/<id>` | hochgeladenen Katalog löschen |
 
+`PUT` und `POST` erwarten `Content-Type: application/json`. Alle Endpunkte weisen
+Anfragen ab, deren `Host` oder `Origin` nicht auf den lokalen Server zeigt — siehe
+[Hinweise](#hinweise).
+
 ## Projektstruktur
 
 ```
@@ -138,6 +146,15 @@ settings.json    gespeicherte Einstellungen
 
 - Der Server lauscht nur auf `127.0.0.1` und kennt keine Anmeldung. Er ist für den
   lokalen Gebrauch gedacht, nicht für den Betrieb im Netz.
+- **Erreichbar ist er nur als `localhost`, `127.0.0.1` oder `[::1]`.** Jeder andere
+  `Host`-Header wird mit `400` abgewiesen. Das hält eine fremde Seite davon ab,
+  ihren eigenen Namen auf `127.0.0.1` zeigen zu lassen und damit als dieselbe
+  Herkunft zu gelten (DNS-Rebinding). Ein Aufruf über den Rechnernamen oder einen
+  vorgeschalteten Proxy funktioniert deshalb nicht.
+- Ausgeliefert werden ausschließlich `quiz.html`, `settings.html` und `style.css`.
+  Andere Dateien im Projektordner sind über HTTP nicht erreichbar.
+- Schreibende Anfragen von einer fremden Herkunft werden abgelehnt, damit keine
+  beliebige Seite im Browser Kataloge anlegen oder Einstellungen ändern kann.
 - Der Lernfortschritt hängt an Browser und Adresse. Wer den Port wechselt, beginnt
   mit einer neuen Statistik.
 
